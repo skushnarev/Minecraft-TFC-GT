@@ -1,0 +1,223 @@
+[
+  {
+    "modId": "TFC-Tweaks",
+    "deps": [
+      {
+        "type": "after",
+        "target": "terrafirmacraft"
+      },
+      {
+        "type": "before",
+        "target": "CarpentersBlocks"
+      },
+      {
+        "type": "before",
+        "target": "tfcadditions"
+      },
+      {
+        "type": "before",
+        "target": "DecorationsTFC"
+      },
+      {
+        "type": "before",
+        "target": "lwstfc"
+      },
+      {
+        "type": "before",
+        "target": "terrafirmastuff"
+      },
+      {
+        "type": "before",
+        "target": "tfcm"
+      },
+      {
+        "type": "before",
+        "target": "tfcautomatedbellows"
+      },
+      {
+        "type": "before",
+        "target": "tfccellars"
+      },
+      {
+        "type": "before",
+        "target": "BiblioCraft"
+      },
+      {
+        "type": "before",
+        "target": "IC2"
+      },
+      {
+        "type": "before",
+        "target": "Railcraft"
+      },
+      {
+        "type": "before",
+        "target": "tfctech"
+      },
+      {
+        "type": "before",
+        "target": "tfcudarymod"
+      },
+      {
+        "type": "before",
+        "target": "appliedenergistics2"
+      },
+      {
+        "type": "before",
+        "target": "BetterFoliage"
+      },
+      {
+        "type": "before",
+        "target": "BiblioWoodsTFC"
+      },
+      {
+        "type": "before",
+        "target": "creativecore"
+      },
+      {
+        "type": "before",
+        "target": "CustomOreGen"
+      },
+      {
+        "type": "before",
+        "target": "lootablebodies"
+      },
+      {
+        "type": "before",
+        "target": "endercore"
+      },
+      {
+        "type": "before",
+        "target": "malisiscore"
+      },
+      {
+        "type": "before",
+        "target": "evolved_controls"
+      },
+      {
+        "type": "before",
+        "target": "farseek"
+      },
+      {
+        "type": "before",
+        "target": "FastCraft"
+      },
+      {
+        "type": "before",
+        "target": "GraviSuite"
+      },
+      {
+        "type": "before",
+        "target": "gregtech"
+      },
+      {
+        "type": "before",
+        "target": "GTTweaker"
+      },
+      {
+        "type": "before",
+        "target": "IC2NuclearControl"
+      },
+      {
+        "type": "before",
+        "target": "journeymap"
+      },
+      {
+        "type": "before",
+        "target": "malisisdoors"
+      },
+      {
+        "type": "before",
+        "target": "MineTweaker3"
+      },
+      {
+        "type": "before",
+        "target": "examplemod"
+      },
+      {
+        "type": "before",
+        "target": "Kradxns Xray"
+      },
+      {
+        "type": "before",
+        "target": "modtweaker2"
+      },
+      {
+        "type": "before",
+        "target": "NEIAddons"
+      },
+      {
+        "type": "before",
+        "target": "NEIAddons|Developer"
+      },
+      {
+        "type": "before",
+        "target": "NEIAddons|AppEng"
+      },
+      {
+        "type": "before",
+        "target": "NEIAddons|Botany"
+      },
+      {
+        "type": "before",
+        "target": "NEIAddons|Forestry"
+      },
+      {
+        "type": "before",
+        "target": "NEIAddons|CraftingTables"
+      },
+      {
+        "type": "before",
+        "target": "NEIAddons|ExNihilo"
+      },
+      {
+        "type": "before",
+        "target": "NEIPlugins"
+      },
+      {
+        "type": "before",
+        "target": "reccomplex"
+      },
+      {
+        "type": "before",
+        "target": "SmartMoving"
+      },
+      {
+        "type": "before",
+        "target": "SmartRender"
+      },
+      {
+        "type": "before",
+        "target": "StacksOnStacks"
+      },
+      {
+        "type": "before",
+        "target": "StevesWorkshop"
+      },
+      {
+        "type": "before",
+        "target": "streams"
+      },
+      {
+        "type": "before",
+        "target": "TerraFirmaCraftNEIplugin"
+      },
+      {
+        "type": "before",
+        "target": "tfcrailcraft"
+      },
+      {
+        "type": "before",
+        "target": "Waila"
+      },
+      {
+        "type": "before",
+        "target": "wailaplugins"
+      },
+      {
+        "type": "before",
+        "target": "wawla"
+      }
+    ]
+  }
+]

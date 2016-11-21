@@ -1,0 +1,1296 @@
+<!--********************** CustomOreGen Geologica Module ******************
+
+	The configuration file for the generation of ore GregTech 
+	for TerraFirmaCraft. Coded __LEXX__ for the project TerraFirmaGreg.
+	www.youtube.com/skushnarev
+	
+	Specialist in Geology DubStalker.
+
+    WORK IN PROGRESS.
+    
+***************************************************************************-->
+
+
+<!--	**************************** Rocks TFC ****************************	-->
+<!--	<Replaces block='terrafirmacraft:StoneIgIn'/>	-->		<!-- Granite -->
+<!--	<Replaces block='terrafirmacraft:StoneIgIn:1'/>	-->		<!-- Diorite -->
+<!--	<Replaces block='terrafirmacraft:StoneIgIn:2'/>	-->		<!-- Gabbro -->
+<!--	<Replaces block='terrafirmacraft:StoneMM'/>		-->		<!-- Quartzite -->
+<!--	<Replaces block='terrafirmacraft:StoneMM:1'/>	-->		<!-- Slate -->
+<!--	<Replaces block='terrafirmacraft:StoneMM:2'/>	-->		<!-- Phyllite -->
+<!--	<Replaces block='terrafirmacraft:StoneMM:3'/>	-->		<!-- Schist -->
+<!--	<Replaces block='terrafirmacraft:StoneMM:4'/>	-->		<!-- Gneiss -->
+<!--	<Replaces block='terrafirmacraft:StoneMM:5'/>	-->		<!-- Marble -->		
+<!--	<Replaces block='terrafirmacraft:StoneSed'/>	-->		<!-- Shale -->
+<!--	<Replaces block='terrafirmacraft:StoneSed:1'/>	-->		<!-- Claystone -->
+<!--	<Replaces block='terrafirmacraft:StoneSed:2'/>	-->		<!-- Rock salt -->
+<!--	<Replaces block='terrafirmacraft:StoneSed:3'/>	-->		<!-- Limestone -->
+<!--	<Replaces block='terrafirmacraft:StoneSed:4'/>	-->		<!-- Conglomerate -->
+<!--	<Replaces block='terrafirmacraft:StoneSed:5'/>	-->		<!-- Dolomite -->
+<!--	<Replaces block='terrafirmacraft:StoneSed:6'/>	-->		<!-- Chert -->
+<!--	<Replaces block='terrafirmacraft:StoneSed:7'/>	-->		<!-- Chalk -->
+<!--	<Replaces block='terrafirmacraft:StoneIgEx'/>	-->		<!-- Rhyalite -->
+<!--	<Replaces block='terrafirmacraft:StoneIgEx:1'/>	-->		<!-- Basalt -->
+<!--	<Replaces block='terrafirmacraft:StoneIgEx:2'/>	-->		<!-- Andesite -->
+<!--	<Replaces block='terrafirmacraft:StoneIgEx:3'/>	-->		<!-- Dacite -->
+
+<!--	**************************** Rocks GT ****************************	-->
+<!--	<gregtech:gt.blockgranites>		-->		<!-- Black Granite -->
+<!--	<gregtech:gt.blockgranites:8>	-->		<!-- Red Granite -->
+
+
+<!--	**************************** Ores GT ****************************	-->
+<!--	<gregtech:gt.blockores:822>		-->		<!-- Bauxite Ore (Aluminium) -->
+<!--	<gregtech:gt.blockores:16822>	-->		<!-- Small Bauxite Ore (Aluminium) -->
+
+<!--	<gregtech:gt.blockores:918>		-->		<!-- Ilmenite Ore (Titan) -->
+<!--	<gregtech:gt.blockores:16918>	-->		<!-- Small Ilmenite Ore (Titan) -->
+
+<!--	<gregtech:gt.blockores:910>		-->		<!-- Scheelite Ore (Tungsten) -->
+<!--	<gregtech:gt.blockores:16910>	-->		<!-- Small Scheelite Ore (Tungsten) -->
+<!--	<gregtech:gt.blockores:841>		-->		<!-- Tungstate Ore (Tungsten) -->
+<!--	<gregtech:gt.blockores:16841>	-->		<!-- Small Tungstate Ore (Tungsten) -->
+
+<!--	<gregtech:gt.blockores:945>		-->		<!-- Stibnite Ore (Antimony) -->
+<!--	<gregtech:gt.blockores:16945>	-->		<!-- Small Stibnite Ore (Antimony) -->
+
+<!--	<gregtech:gt.blockores:909>		-->		<!-- Pentlandite Ore (Nickel) -->
+<!--	<gregtech:gt.blockores:16909>	-->		<!-- Small Pentlandite Ore (Nickel) -->
+<!--	<gregtech:gt.blockores:906>		-->		<!-- Garnierite Ore (Nickel) -->
+<!--	<gregtech:gt.blockores:16906>	-->		<!-- Small Garnierite Ore (Nickel) -->
+
+<!--	<gregtech:gt.blockores:942>		-->		<!-- Molybdenite Ore (Molybdenum) -->
+<!--	<gregtech:gt.blockores:16942>	-->		<!-- Small Molybdenite Ore (Molybdenum) -->
+
+<!--	<gregtech:gt.blockores:908>		-->		<!-- Magnesite Ore (Magnesium) -->
+<!--	<gregtech:gt.blockores:16908>	-->		<!-- Small Magnesite Ore (Magnesium) -->
+
+<!--	<gregtech:gt.blockores:943>		-->		<!-- Pyrolusite Ore (Manganese) -->
+<!--	<gregtech:gt.blockores:16943>	-->		<!-- Small Pyrolusite Ore (Manganese) -->
+
+<!--	<gregtech:gt.blockores:825>		-->		<!-- Chromite Ore (Chrome) -->
+<!--	<gregtech:gt.blockores:16825>	-->		<!-- Small Chromite Ore (Chrome) -->
+
+<!--	<gregtech:gt.blockores:502>		-->		<!-- Ruby Ore (Ruby) -->
+<!--	<gregtech:gt.blockores:16502>	-->		<!-- Small Ruby Ore (Ruby) -->
+
+<!--	<gregtech:gt.blockores:827>		-->		<!-- Cobaltite Ore (Cobalt) -->
+<!--	<gregtech:gt.blockores:16827>	-->		<!-- Small Cobaltite Ore (Cobalt) -->
+
+<!--	<gregtech:gt.blockores:907>		-->		<!-- Lepidolite Ore (Aluminium, Lithium, Potassium) -->
+<!--	<gregtech:gt.blockores:16907>	-->		<!-- Small Lepidolite Ore (Aluminium, Lithium, Potassium) -->
+
+<!--	<gregtech:gt.blockores:920>		-->		<!-- Spodumene Ore (Silicon, Aluminium, Lithium) -->
+<!--	<gregtech:gt.blockores:16920>	-->		<!-- Small Spodumene Ore (Silicon, Aluminium, Lithium) -->
+
+<!--	<gregtech:gt.blockores:523>		-->		<!-- Quartzite Ore (Quartzite) -->
+<!--	<gregtech:gt.blockores:16532>	-->		<!-- Small Quartzite Ore (Quartzite) -->
+
+<!--	<gregtech:gt.blockores:84>		-->		<!-- Iridium Ore (Iridium) -->
+<!--	<gregtech:gt.blockores:16084>	-->		<!-- Small Iridium Ore (Iridium) -->
+
+<!--	<gregtech:gt.blockores:1878>	-->		<!-- Oilsands Ore (Oil) 0_o -->
+
+
+
+
+
+<IfModInstalled name='gregtech'>
+
+	<ConfigSection> <!-- GUI -->
+	
+		<OptionChoice name='ifGranite' default='true' displayState='shown' displayGroup='GregTech'>
+			<Description>
+				Generate distributions of Granite.
+			</Description>
+			<DisplayName>Granite</DisplayName>
+			<Choice value='true' displayValue='On'/>
+			<Choice value='false' displayValue='Off'/>
+		</OptionChoice>
+	
+		<OptionChoice name='ifBauxite' default='all' displayState='shown' displayGroup='GregTech'>
+			<Description>
+				Generate distributions of Bauxite.
+			</Description>
+			<DisplayName>Bauxite</DisplayName>
+			<Choice value='all' displayValue='All' description='Small and Big ore deposits.'/>
+			<Choice value='small' displayValue='Small' description='Only Small ore deposits.'/>
+			<Choice value='big' displayValue='Big' description='Only Big and rare ore deposits.'/>
+			<Choice value='false' displayValue='Off'/>
+		</OptionChoice>
+
+		<OptionChoice name='ifTitan' default='all' displayState='shown' displayGroup='GregTech'>
+			<Description>
+				Generate distributions of Titan.
+			</Description>
+			<DisplayName>Titan</DisplayName>
+			<Choice value='all' displayValue='All' description='Small and Big ore deposits.'/>
+			<Choice value='small' displayValue='Small' description='Only Small ore deposits.'/>
+			<Choice value='big' displayValue='Big' description='Only Big and rare ore deposits.'/>
+			<Choice value='false' displayValue='Off'/>
+		</OptionChoice>
+		
+		<OptionChoice name='ifOlivine' default='true' displayState='shown' displayGroup='GregTech'>
+			<Description>
+				Generate distributions of Olivine.
+			</Description>
+			<DisplayName>Olivine</DisplayName>
+			<Choice value='true' displayValue='On'/>
+			<Choice value='false' displayValue='Off'/>
+		</OptionChoice>
+
+		<OptionChoice name='ifTungsten' default='all' displayState='shown' displayGroup='GregTech'>
+			<Description>
+				Generate distributions of Tungsten.
+			</Description>
+			<DisplayName>Tungsten</DisplayName>
+			<Choice value='all' displayValue='All' description='Small and Big ore deposits.'/>
+			<Choice value='small' displayValue='Small' description='Only Small ore deposits.'/>
+			<Choice value='big' displayValue='Big' description='Only Big and rare ore deposits.'/>
+			<Choice value='false' displayValue='Off'/>
+		</OptionChoice>
+		
+		<OptionChoice name='ifStibnite' default='all' displayState='shown' displayGroup='GregTech'>
+			<Description>
+				Generate distributions of Stibnite.
+			</Description>
+			<DisplayName>Stibnite</DisplayName>
+			<Choice value='all' displayValue='All' description='Small and Big ore deposits.'/>
+			<Choice value='small' displayValue='Small' description='Only Small ore deposits.'/>
+			<Choice value='big' displayValue='Big' description='Only Big and rare ore deposits.'/>
+			<Choice value='false' displayValue='Off'/>
+		</OptionChoice>
+		
+		<OptionChoice name='ifPentlandite' default='all' displayState='shown' displayGroup='GregTech'>
+			<Description>
+				Generate distributions of Pentlandite.
+			</Description>
+			<DisplayName>Pentlandite</DisplayName>
+			<Choice value='all' displayValue='All' description='Small and Big ore deposits.'/>
+			<Choice value='small' displayValue='Small' description='Only Small ore deposits.'/>
+			<Choice value='big' displayValue='Big' description='Only Big and rare ore deposits.'/>
+			<Choice value='false' displayValue='Off'/>
+		</OptionChoice>
+		
+		<OptionChoice name='ifMolybdenite' default='all' displayState='shown' displayGroup='GregTech'>
+			<Description>
+				Generate distributions of Molybdenite.
+			</Description>
+			<DisplayName>Molybdenite</DisplayName>
+			<Choice value='all' displayValue='All' description='Small and Big ore deposits.'/>
+			<Choice value='small' displayValue='Small' description='Only Small ore deposits.'/>
+			<Choice value='big' displayValue='Big' description='Only Big and rare ore deposits.'/>
+			<Choice value='false' displayValue='Off'/>
+		</OptionChoice>
+		
+		<OptionChoice name='ifMagnesite' default='all' displayState='shown' displayGroup='GregTech'>
+			<Description>
+				Generate distributions of Magnesite.
+			</Description>
+			<DisplayName>Magnesite</DisplayName>
+			<Choice value='all' displayValue='All' description='Small and Big ore deposits.'/>
+			<Choice value='small' displayValue='Small' description='Only Small ore deposits.'/>
+			<Choice value='big' displayValue='Big' description='Only Big and rare ore deposits.'/>
+			<Choice value='false' displayValue='Off'/>
+		</OptionChoice>
+		
+		<OptionChoice name='ifPyrolusite' default='all' displayState='shown' displayGroup='GregTech'>
+			<Description>
+				Generate distributions of Pyrolusite.
+			</Description>
+			<DisplayName>Pyrolusite</DisplayName>
+			<Choice value='all' displayValue='All' description='Small and Big ore deposits.'/>
+			<Choice value='small' displayValue='Small' description='Only Small ore deposits.'/>
+			<Choice value='big' displayValue='Big' description='Only Big and rare ore deposits.'/>
+			<Choice value='false' displayValue='Off'/>
+		</OptionChoice>
+	
+		<OptionChoice name='ifChromite' default='all' displayState='shown' displayGroup='GregTech'>
+			<Description>
+				Generate distributions of Chromite.
+			</Description>
+			<DisplayName>Chromite</DisplayName>
+			<Choice value='all' displayValue='All' description='Small and Big ore deposits.'/>
+			<Choice value='small' displayValue='Small' description='Only Small ore deposits.'/>
+			<Choice value='big' displayValue='Big' description='Only Big and rare ore deposits.'/>
+			<Choice value='false' displayValue='Off'/>
+		</OptionChoice>
+		
+		<OptionChoice name='ifCobaltite' default='all' displayState='shown' displayGroup='GregTech'>
+			<Description>
+				Generate distributions of Cobaltite.
+			</Description>
+			<DisplayName>Cobaltite</DisplayName>
+			<Choice value='all' displayValue='All' description='Small and Big ore deposits.'/>
+			<Choice value='small' displayValue='Small' description='Only Small ore deposits.'/>
+			<Choice value='big' displayValue='Big' description='Only Big and rare ore deposits.'/>
+			<Choice value='false' displayValue='Off'/>
+		</OptionChoice>
+		
+		<OptionChoice name='ifIridium' default='true' displayState='shown' displayGroup='GregTech'>
+			<Description>
+				Generate distributions of Iridium.
+			</Description>
+			<DisplayName>Iridium</DisplayName>
+			<Choice value='true' displayValue='On'/>
+			<Choice value='false' displayValue='Off'/>
+		</OptionChoice>
+		
+		<OptionChoice name='ifOilsands' default='all' displayState='shown' displayGroup='GregTech'>
+			<Description>
+				Generate distributions of Oilsands.
+			</Description>
+			<DisplayName>Oilsands</DisplayName>
+			<Choice value='all' displayValue='All' description='Small and Big ore deposits.'/>
+			<Choice value='small' displayValue='Small' description='Only Small ore deposits.'/>
+			<Choice value='big' displayValue='Big' description='Only Big and rare ore deposits.'/>
+			<Choice value='false' displayValue='Off'/>
+		</OptionChoice>
+		
+		<OptionChoice name='ifGeoJeod' default='true' displayState='shown' displayGroup='GregTech'>
+			<Description>
+				Generate distributions of GeoJeod.
+			</Description>
+			<DisplayName>GeoJeod</DisplayName>
+			<Choice value='true' displayValue='On'/>
+			<Choice value='false' displayValue='Off'/>
+		</OptionChoice>
+
+		<OptionChoice name='ifMeteorite' default='true' displayState='shown' displayGroup='GregTech'>
+			<Description>
+				Generate distributions of Meteorite.
+			</Description>
+			<DisplayName>Meteorite</DisplayName>
+			<Choice value='true' displayValue='On'/>
+			<Choice value='false' displayValue='Off'/>
+		</OptionChoice>
+		
+		<OptionChoice name='ifGlowstone' default='true' displayState='shown' displayGroup='GregTech'>
+			<Description>
+				Generate distributions of Glowstone stalactite in caves.
+			</Description>
+			<DisplayName>Glowstone stalactite</DisplayName>
+			<Choice value='true' displayValue='On'/>
+			<Choice value='false' displayValue='Off'/>
+		</OptionChoice>
+		
+		<OptionChoice name='ifPyrites' default='all' displayState='shown' displayGroup='GregTech'>
+			<Description>
+				Generate distributions of Chalcopyrite and Pyrite with admixtures of Sphalerite and Galena.
+			</Description>
+			<DisplayName>Pyrites</DisplayName>
+			<Choice value='all' displayValue='All' description='Small and Big ore deposits.'/>
+			<Choice value='small' displayValue='Small' description='Only Small ore deposits.'/>
+			<Choice value='big' displayValue='Big' description='Only Big and rare ore deposits.'/>
+			<Choice value='false' displayValue='Off'/>
+		</OptionChoice>
+		
+		<OptionChoice name='ifGems' default='true' displayState='shown' displayGroup='GregTech'>
+			<Description>
+				Generate distributions of Gems.
+			</Description>
+			<DisplayName>Gems</DisplayName>
+			<Choice value='true' displayValue='On'/>
+			<Choice value='false' displayValue='Off'/>
+		</OptionChoice>
+		
+		<OptionNumeric name='ifSmallOres' default='10' displayState='shown' displayGroup='GregTech'>
+			<Min>0</Min>
+			<Max>40</Max>
+			<Description>
+				Generate distributions of Small Ores.
+			</Description>
+			<DisplayName>Small Ores</DisplayName>
+		</OptionNumeric>
+	</ConfigSection>
+
+	<ConfigSection> <!-- Rock gen -->
+
+		<IfChoice name='ifGranite' value='true'>
+			<CloudPreset name='GTGranite' drawWireframe='false' wireframeColor='0xFFB30000'>
+				<Setting name='CloudHeight' avg='125' range='125'/>
+				<Setting name='CloudRadius' avg='20' range='5'/>
+				<Setting name='CloudThickness' avg='30' range='10'/>
+				<Setting name='OreDensity' avg='1' range='0'/>
+				<Setting name='DistributionFrequency' avg='0.002'/>
+				<Setting name='OreVolumeNoiseCutoff' avg='0.2'/>
+				<Biome name='.*'/>
+				<Replaces block='terrafirmacraft:StoneIgIn'/> <!-- Granite -->
+			</CloudPreset>
+			
+			<Cloud name='BlackGranite' inherits='GTGranite' block='gregtech:gt.blockgranites'/> <!-- Black Granite -->
+			<Cloud name='RedGranite' inherits='GTGranite' block='gregtech:gt.blockgranites:8'/> <!-- Red Granite -->
+		</IfChoice>
+	
+	</ConfigSection>
+	
+	<ConfigSection> <!-- Ore gen -->
+	
+		<StandardGenPreset name='AllStone'>
+			<Replaces block='terrafirmacraft:StoneIgIn'/>
+			<Replaces block='terrafirmacraft:StoneIgIn:1'/>
+			<Replaces block='terrafirmacraft:StoneIgIn:2'/>
+			<Replaces block='terrafirmacraft:StoneMM'/>
+			<Replaces block='terrafirmacraft:StoneMM:1'/>
+			<Replaces block='terrafirmacraft:StoneMM:2'/>
+			<Replaces block='terrafirmacraft:StoneMM:3'/>
+			<Replaces block='terrafirmacraft:StoneMM:4'/>
+			<Replaces block='terrafirmacraft:StoneMM:5'/>
+			<Replaces block='terrafirmacraft:StoneSed'/>
+			<Replaces block='terrafirmacraft:StoneSed:1'/>
+			<Replaces block='terrafirmacraft:StoneSed:2'/>
+			<Replaces block='terrafirmacraft:StoneSed:3'/>
+			<Replaces block='terrafirmacraft:StoneSed:4'/>
+			<Replaces block='terrafirmacraft:StoneSed:5'/>
+			<Replaces block='terrafirmacraft:StoneSed:6'/>
+			<Replaces block='terrafirmacraft:StoneSed:7'/>
+			<Replaces block='terrafirmacraft:StoneIgEx'/>
+			<Replaces block='terrafirmacraft:StoneIgEx:1'/>
+			<Replaces block='terrafirmacraft:StoneIgEx:2'/>
+			<Replaces block='terrafirmacraft:StoneIgEx:3'/>
+		</StandardGenPreset>
+
+		<!-- GeoJeod -->
+		<IfChoice name='ifGeoJeod' value='true'>
+			<CloudPreset name="Spher">
+				<Setting name='CloudHeight' avg='90' range='30'/>
+				<Setting name='CloudRadius' avg='10' range='0'/>
+				<Setting name='CloudThickness' avg='10' range='0'/>
+				<Setting name='ParentRangeLimit' avg='0' range='0'/>
+				<Setting name='OreDensity' avg='1' range='0'/>
+				<Setting name='CloudSizeNoise' avg='0'/>
+				<Setting name='OreVolumeNoiseCutoff' avg='0'/>
+				<Setting name='CloudInclination' avg='0' range='0'/>
+				<Setting name='DistributionFrequency' avg='0.002'/>
+				<Biome name='.*'/>
+				<!-- <Replaces block='air'/> -->
+				<Replaces block='terrafirmacraft:StoneMM:4'/>		<!-- Gneiss -->
+				<Replaces block='terrafirmacraft:StoneMM'/>		<!-- Quartzite -->
+				<Replaces block='terrafirmacraft:StoneIgIn'/>		<!-- Granite -->
+				<Replaces block='gregtech:gt.blockgranites'/>		<!-- Black Granite -->
+				<Replaces block='gregtech:gt.blockgranites:8'/>	<!-- Red Granite -->
+			</CloudPreset>
+			
+			<CloudPreset name="GeoJeodHotWater" inherits='Spher' drawWireframe='false' wireframeColor='0x40336699'>
+				<OreBlock block='terrafirmacraft:HotWaterStationary'/>
+				<Setting name='CloudRadius' avg=':= 0.8 * _default_'/>
+				<Setting name='CloudThickness' avg=':= 0.8 * _default_'/>
+				<!-- <ReplacesRegexp block='.*'/> -->
+			</CloudPreset>
+			   
+			<CloudPreset name="GeoJeodLava" inherits='Spher' drawWireframe='false' wireframeColor='0x40B30000'>
+				<OreBlock block='terrafirmacraft:LavaStationary'/>
+				<Setting name='CloudRadius' avg=':= 0.8 * _default_'/>
+				<Setting name='CloudThickness' avg=':= 0.8 * _default_'/>
+				<!-- <ReplacesRegexp block='.*'/> -->
+			</CloudPreset>
+			 
+			<CloudPreset name="GeoCitrusQuarzJeod" inherits='Spher' drawWireframe='false' wireframeColor='0x43CCCCCC'>
+				<OreBlock block='gregtech:gt.blockores' weight='0.5'
+						  nbt='{m:516, n:1, id:"GT_TileEntity_Ores"}'/>
+				<OreBlock block='gregtech:gt.blockores' weight='0.5'
+						  nbt='{m:16516, n:1, id:"GT_TileEntity_Ores"}'/>
+				<!-- <ReplacesRegexp block='.*'/> -->
+			</CloudPreset>
+
+			<CloudPreset name="GeoNetherQuarzJeod" inherits='Spher' drawWireframe='false' wireframeColor='0x43CCCCCC'>
+				<OreBlock block='gregtech:gt.blockores' weight='0.5'
+						  nbt='{m:1522, n:1, id:"GT_TileEntity_Ores"}'/>
+				<OreBlock block='gregtech:gt.blockores' weight='0.5'
+						  nbt='{m:17522, n:1, id:"GT_TileEntity_Ores"}'/>						  
+				<Setting name='CloudRadius' avg=':= 0.4 * _default_'/>
+				<Setting name='CloudThickness' avg=':= 0.4 * _default_'/>
+				<!-- <ReplacesRegexp block='.*'/> -->
+			</CloudPreset>
+			
+			<CloudPreset name="GeoJeodShell" inherits='Spher' drawWireframe='false' wireframeColor='0x4300822b'>
+				<OreBlock block='gregtech:gt.blockores' weight='0.2'
+						  nbt='{m:907, n:1, id:"GT_TileEntity_Ores"}'/>
+				<OreBlock block='gregtech:gt.blockores' weight='0.1'
+						  nbt='{m:16907, n:1, id:"GT_TileEntity_Ores"}'/>
+				<OreBlock block='gregtech:gt.blockores' weight='0.2'
+						  nbt='{m:920, n:1, id:"GT_TileEntity_Ores"}'/>
+				<OreBlock block='gregtech:gt.blockores' weight='0.1'
+						  nbt='{m:16920, n:1, id:"GT_TileEntity_Ores"}'/>
+				<OreBlock block='gregtech:gt.blockores' weight='0.2'
+						  nbt='{m:523, n:1, id:"GT_TileEntity_Ores"}'/>
+				<OreBlock block='gregtech:gt.blockores' weight='0.1'
+						  nbt='{m:16523, n:1, id:"GT_TileEntity_Ores"}'/>	
+				<Setting name='CloudRadius' avg=':= 1.2 * _default_'/>
+				<Setting name='CloudThickness' avg=':= 1.2 * _default_'/>
+				<Setting name='OreDensity' avg='0.9' range='0'/>
+				<!-- <ReplacesRegexp block='.*'/> -->
+			</CloudPreset>
+			
+			<CloudPreset name="GeoJeodShellOut" inherits='GeoJeodShell' drawWireframe='false' wireframeColor='0x43006723'>
+				<Setting name='CloudRadius' avg=':= 1.8 * _default_'/>
+				<Setting name='CloudThickness' avg=':= 1.8 * _default_'/>
+				<Setting name='OreDensity' avg='0.07' range='0'/>
+				<!-- <ReplacesRegexp block='.*'/> -->
+			</CloudPreset>
+			
+			<CloudPreset name="GeoJeodGems" inherits='Spher' drawWireframe='false' wireframeColor='0x4300B3B3'>
+				<OreBlock block='gregtech:gt.blockores' weight='0.1'
+						  nbt='{m:501, n:1, id:"GT_TileEntity_Ores"}'/>
+				<OreBlock block='gregtech:gt.blockores' weight='0.1'
+						  nbt='{m:502, n:1, id:"GT_TileEntity_Ores"}'/>
+				<OreBlock block='gregtech:gt.blockores' weight='0.1'
+						  nbt='{m:503, n:1, id:"GT_TileEntity_Ores"}'/>
+				<OreBlock block='gregtech:gt.blockores' weight='0.1'
+						  nbt='{m:504, n:1, id:"GT_TileEntity_Ores"}'/>
+				<OreBlock block='gregtech:gt.blockores' weight='0.1'
+						  nbt='{m:505, n:1, id:"GT_TileEntity_Ores"}'/>
+				<OreBlock block='gregtech:gt.blockores' weight='0.1'
+						  nbt='{m:506, n:1, id:"GT_TileEntity_Ores"}'/>
+				<OreBlock block='gregtech:gt.blockores' weight='0.1'
+						  nbt='{m:507, n:1, id:"GT_TileEntity_Ores"}'/>
+				<OreBlock block='gregtech:gt.blockores' weight='0.1'
+						  nbt='{m:508, n:1, id:"GT_TileEntity_Ores"}'/>
+				<OreBlock block='gregtech:gt.blockores' weight='0.1'
+						  nbt='{m:509, n:1, id:"GT_TileEntity_Ores"}'/>
+				<Setting name='CloudRadius' avg=':= 0.4 * _default_'/>
+				<Setting name='CloudThickness' avg=':= 0.4 * _default_'/>
+				<!-- <ReplacesRegexp block='.*'/> -->
+			</CloudPreset>
+			
+			<CloudPreset name="GeoJeodSulfur" inherits='Spher' drawWireframe='false' wireframeColor='0xFFD9D900'>
+				<OreBlock block='gregtech:gt.blockores' weight='0.5'
+						  nbt='{m:1022, n:1, id:"GT_TileEntity_Ores"}'/>
+				<OreBlock block='gregtech:gt.blockores' weight='0.5'
+						  nbt='{m:17022, n:1, id:"GT_TileEntity_Ores"}'/>
+				<!-- <ReplacesRegexp block='.*'/> -->
+			</CloudPreset>
+			
+			<CloudPreset name='GeoMarker' inherits='Spher' drawWireframe='false' wireframeColor='0xFF000000'>
+				<Setting name='CloudRadius' avg='1' range='0'/>
+				<Setting name='CloudThickness' avg='1' range='0'/>
+				<OreBlock block='appliedenergistics2:tile.BlockSkyStone'/>
+			</CloudPreset>
+		
+			<Cloud name='GeoMarkerH' inherits='GeoMarker' seed='0xF186'/>
+			<Cloud name='GeoJeodGems' inherits='GeoJeodGems' seed='0xF186'/>
+			<Cloud name='GeoJeodHotWater' inherits='GeoJeodHotWater' seed='0xF186'/>
+			<Cloud name='GeoCitrusQuarzJeod' inherits='GeoCitrusQuarzJeod' seed='0xF186'/>
+			<Cloud name='GeoJeodShell' inherits='GeoJeodShell' seed='0xF186'/>
+			<Cloud name='GeoJeodShellOut' inherits='GeoJeodShellOut' seed='0xF186'/>
+			
+			<Cloud name='GeoMarkerL' inherits='GeoMarker' seed='0xF187'/>
+			<Cloud name='GeoNetherQuarzJeod' inherits='GeoNetherQuarzJeod' seed='0xF187'/>
+			<Cloud name='GeoJeodLava' inherits='GeoJeodLava' seed='0xF187'/>
+			<Cloud name='GeoJeodSulfur' inherits='GeoJeodSulfur' seed='0xF187'/>
+
+		</IfChoice>
+			
+		<IfChoice name='ifMeteorite' value='true'> <!-- Meteorite -->
+			<CloudPreset name="Asteroid">
+				<Setting name='CloudHeight' avg='100' range='10'/>
+				<Setting name='CloudRadius' avg='10' range='0'/>
+				<Setting name='CloudThickness' avg='10' range='0'/>
+				<Setting name='ParentRangeLimit' avg='0' range='0'/>
+				<Setting name='OreDensity' avg='1' range='0'/>
+				<Setting name='CloudSizeNoise' avg='0'/>
+				<Setting name='OreVolumeNoiseCutoff' avg='0'/>
+				<Setting name='CloudInclination' avg='0' range='0'/>
+				<Setting name='DistributionFrequency' avg='0.001'/>
+				<Biome name='.*'/>
+				<!-- <ReplacesRegexp block='.*'/> -->
+				<!-- <Replaces block='terrafirmacraft:StoneMM:4'/>		--> <!-- Gneiss -->
+				<!-- <Replaces block='terrafirmacraft:StoneMM'/>		--> <!-- Quartzite -->
+				<!-- <Replaces block='terrafirmacraft:StoneIgIn'/>		--> <!-- Granite -->
+				<!-- <Replaces block='gregtech:gt.blockgranites'/>		--> <!-- Black Granite -->
+				<!-- <Replaces block='gregtech:gt.blockgranites:8'/>	--> <!-- Red Granite -->
+			</CloudPreset>
+			
+			<CloudPreset name="MeteoriteLava" inherits='Asteroid' drawWireframe='false' wireframeColor='0xFFD90000'>
+				<OreBlock block='terrafirmacraft:LavaStationary' weight='0.1'/>
+				<PlacesBelow block='air'/>
+				<Replaces block='air'/>
+				<PlacesAbove block='appliedenergistics2:tile.BlockSkyStone'/>
+			</CloudPreset>   
+			
+			<CloudPreset name="MeteoriteSkyStome" inherits='Asteroid' drawWireframe='false' wireframeColor='0xFF000000'>
+				<OreBlock block='appliedenergistics2:tile.BlockSkyStone'/>
+				<Setting name='CloudRadius' avg=':= 0.9 * _default_'/>
+				<Setting name='CloudThickness' avg=':= 0.9 * _default_'/>
+				<ReplacesRegexp block='.*'/>
+			</CloudPreset>   
+			 
+			<CloudPreset name="MeteoriteIron" inherits='Asteroid' drawWireframe='false' wireframeColor='0x43CCCCCC'>
+				<OreBlock block='gregtech:gt.blockores' weight='0.5'
+						  nbt='{m:3340, n:1, id:"GT_TileEntity_Ores"}'/>
+				<OreBlock block='gregtech:gt.blockores' weight='0.5'
+						  nbt='{m:19340, n:1, id:"GT_TileEntity_Ores"}'/>
+				<Setting name='CloudRadius' avg=':= 0.4 * _default_'/>
+				<Setting name='CloudThickness' avg=':= 0.4 * _default_'/>
+				<ReplacesRegexp block='.*'/>
+			</CloudPreset>
+
+			<CloudPreset name='MeteoriteMarker' inherits='Asteroid' drawWireframe='false' wireframeColor='0xFFFFFFFF'>
+				<Setting name='CloudRadius' avg='3' range='0'/>
+				<Setting name='CloudThickness' avg='3' range='0'/>
+				<Setting name='OreDensity' avg='1' range='0'/>
+				<!-- <Setting name='DistributionFrequency' avg=':=_default_ * 2'/> -->
+				<OreBlock block='appliedenergistics2:tile.BlockSkyStone' weight='1'/>
+				<!-- <PlacesBeside block='minecraft:stone'/> -->
+				<PlacesBelow block='air'/>
+				<ReplacesRegexp block='.*'/>
+				<PlacesAbove block='minecraft:stone'/>
+				<!-- <PlacesBelow block='Stone'/> -->
+				<!-- <Replaces block='terrafirmacraft:StoneMM:4'/>		 --> <!-- Gneiss -->
+				<!-- <Replaces block='terrafirmacraft:StoneMM'/>		 --> <!-- Quartzite -->
+				<!-- <Replaces block='terrafirmacraft:StoneIgIn'/>		 --> <!-- Granite -->
+				<!-- <Replaces block='gregtech:gt.blockgranites'/>		 --> <!-- Black Granite -->
+				<!-- <Replaces block='gregtech:gt.blockgranites:8'/>	 --> <!-- Red Granite -->
+			</CloudPreset>
+			
+			<Cloud name='MeteoriteSkyStome' inherits='MeteoriteSkyStome' seed='0xF188'/>
+			<Cloud name='MeteoriteLava' inherits='MeteoriteLava' seed='0xF188'/>
+			<Cloud name='MeteoriteIron' inherits='MeteoriteIron' seed='0xF188'/>
+
+		</IfChoice>
+		
+		<IfNotChoice name='ifBauxite' value='false'> 
+			<CloudPreset name='Bauxite' drawWireframe='false'>
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:822, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.6'/> <!-- Bauxite Ore (Aluminium) -->
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:16822, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.35'/> <!-- Small Bauxite Ore (Aluminium) -->
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:16918, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.025'/> <!-- Small Ilmenite Ore (Titan) -->
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:16825, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.025'/> <!-- Small Chromite Ore (Chrome) -->
+				<!-- <Setting name='CloudHeight' avg='200' range='5'/> -->
+				<Setting name='OreDensity' avg='0.5' range='0.2'/>
+				<Setting name='CloudRadius' avg='10' range='5'/>
+				<Setting name='CloudThickness' avg='4' range='2'/>
+				<Setting name='DistributionFrequency' avg='0.08'/>
+				<Setting name='CloudHeight' avg='110' range='50'/>
+				<Biome name='.*'/>
+				<!-- <Replaces block='air'/> -->
+				<Replaces block='terrafirmacraft:StoneSed'/> <!-- Shale -->
+				<Replaces block='terrafirmacraft:StoneSed:1'/> <!-- Claystone -->
+				<Replaces block='terrafirmacraft:StoneSed:3'/> <!-- Limestone -->
+				<Replaces block='terrafirmacraft:StoneSed:4'/> <!-- Conglomerate -->
+			</CloudPreset>
+			
+			<IfCondition condition=':= if(ifBauxite = "all" | ifBauxite = "small", true, false)'>	
+				<Cloud name='SmallBauxite' inherits='Bauxite' wireframeColor='0xFFD96C00'/>
+			</IfCondition>
+			
+			<IfCondition condition=':= if(ifBauxite = "all" | ifBauxite = "big", true, false)'>
+				<Cloud name='BigBauxite' inherits='Bauxite' wireframeColor='0xFFB35900'>
+					<Setting name='CloudRadius' avg=':=_default_*4' range=':=_default_*2'/>
+					<Setting name='CloudThickness' avg=':=_default_*2' range=':=_default_*1.5'/>
+					<Setting name='DistributionFrequency' avg=':=_default_*0.025'/>
+					<Setting name='CloudHeight' avg='120' range='20'/>
+				</Cloud>
+			</IfCondition>
+		</IfNotChoice> 
+
+		<IfNotChoice name='ifTitan' value='false'> 
+			<VeinsPreset name='Titan' drawWireframe='false'>
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:918, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.6'/> <!-- Ilmenite Ore (Titan) -->
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:16918, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.3'/> <!-- Small Ilmenite Ore (Titan) -->
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:16530, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.1'/> <!-- Small Apatite Ore (Titan) -->
+				<Setting name='MotherlodeHeight' avg='40' range='30'/>
+				<!-- <Setting name='MotherlodeHeight' avg='200' range='5'/> -->
+				<Setting name='MotherlodeSize' avg='2' range='1'/>
+				<Setting name='BranchLength' avg='20' range='5'/>
+				<Setting name='MotherlodeRangeLimit' avg='100' range='15'/>
+				<Setting name='SegmentRadius' avg='1' range='0.5'/>
+				<Setting name='MotherlodeFrequency' avg='0.06'/>
+				<Biome name='.*'/>
+				<Replaces block='terrafirmacraft:StoneIgIn:2'/> <!-- Gabbro -->
+				<Replaces block='terrafirmacraft:StoneIgIn:1'/> <!-- Diorite -->
+				<Replaces block='terrafirmacraft:StoneIgIn'/> <!-- Granite -->
+				<Replaces block='gregtech:gt.blockgranites'/> <!-- Black Granite -->
+				<Replaces block='gregtech:gt.blockgranites:8'/> <!-- Red Granite -->
+				<Replaces block='terrafirmacraft:StoneIgEx:2'/> <!-- Andesite -->
+			</VeinsPreset>
+
+			<IfCondition condition=':= if(ifTitan = "all" | ifTitan = "small", true, false)'>
+				<Veins name='SmallTitan' inherits='Titan' wireframeColor='0xFF400000'/>
+			</IfCondition>
+			
+			<IfCondition condition=':= if(ifTitan = "all" | ifTitan = "big", true, false)'>
+				<Veins name='BigTitan' inherits='Titan' wireframeColor='0xFF270000'>
+					<Setting name='BranchFrequency' avg='3' range='1'/>
+					<Setting name='SegmentRadius' avg='1.5' range='0.5'/>
+					<Setting name='BranchLength' avg='60' range='10'/>
+					<Setting name='BranchHeightLimit' avg='30' range='10'/>
+					<Setting name='SegmentForkFrequency' avg='0.5' range='0.2'/>
+					<Setting name='BranchInclination' avg='0' range='0.3'/>
+					<Setting name='SegmentAngle' avg='0' range='0.3'/>
+					<Setting name='MotherlodeFrequency' avg=':=_default_*0.025'/>
+					<Setting name='MotherlodeHeight' avg=':=_default_-10' range=':=_default_'/>
+				</Veins>
+			</IfCondition>
+		</IfNotChoice> 	
+		
+		<IfNotChoice name='ifTungsten' value='false'> 
+			<VeinsPreset name='Tungsten' drawWireframe='false'>
+				<OreBlock block='gregtech:gt.blockores'
+					nbt='{m:910, n:1, id:"GT_TileEntity_Ores"}'
+					weight='0.6'/> <!-- Scheelite Ore (Tungsten) -->
+				<OreBlock block='gregtech:gt.blockores'
+					nbt='{m:16910, n:1, id:"GT_TileEntity_Ores"}'
+					weight='0.25'/> <!-- Small Scheelite Ore (Tungsten) -->
+				<OreBlock block='gregtech:gt.blockores'
+					nbt='{m:841, n:1, id:"GT_TileEntity_Ores"}'
+					weight='0.05'/> <!-- Tungstate Ore (Tungsten) -->
+				<OreBlock block='gregtech:gt.blockores'
+					nbt='{m:16841, n:1, id:"GT_TileEntity_Ores"}'
+					weight='0.05'/> <!-- Small Tungstate Ore (Tungsten) -->
+				<OreBlock block='gregtech:gt.blockores'
+					nbt='{m:16824, n:1, id:"GT_TileEntity_Ores"}'
+					weight='0.05'/> <!-- Small Cassiterite Ore (Tin) -->
+				<Setting name='MotherlodeHeight' avg='40' range='30'/>
+				<Setting name='MotherlodeSize' avg='1' range='0'/>
+				<Setting name='BranchLength' avg='40' range='5'/>
+				<Setting name='MotherlodeRangeLimit' avg='100' range='15'/>
+				<Setting name='SegmentRadius' avg='0.8' range='0.2'/>
+				<Setting name='MotherlodeFrequency' avg='0.06'/>
+				<Biome name='.*'/>
+				<Replaces block='terrafirmacraft:StoneIgIn:2'/> <!-- Gabbro -->
+				<Replaces block='terrafirmacraft:StoneIgIn:1'/> <!-- Diorite -->
+				<Replaces block='terrafirmacraft:StoneIgIn'/> <!-- Granite -->
+				<Replaces block='gregtech:gt.blockgranites'/> <!-- Black Granite -->
+				<Replaces block='gregtech:gt.blockgranites:8'/> <!-- Red Granite -->
+				<Replaces block='terrafirmacraft:StoneIgEx:1'/> <!-- Basalt -->
+			</VeinsPreset>
+			
+			<IfCondition condition=':= if(ifTungsten = "all" | ifTungsten = "small", true, false)'>
+				<Veins name='SmallTungsten' inherits='Tungsten' wireframeColor='0xFF222222'/>
+			</IfCondition>
+			
+			<IfCondition condition=':= if(ifTungsten = "all" | ifTungsten = "big", true, false)'>
+				<Veins name='BigTungsten' inherits='Tungsten' wireframeColor='0xFF222222'>
+					<Setting name='BranchFrequency' avg='3' range='1'/>
+					<Setting name='SegmentRadius' avg='1.5' range='0.5'/>
+					<Setting name='BranchLength' avg='60' range='10'/>
+					<Setting name='BranchHeightLimit' avg='30' range='10'/>
+					<Setting name='SegmentForkFrequency' avg='0.5' range='0.2'/>
+					<Setting name='BranchInclination' avg='0' range='0.3'/>
+					<Setting name='SegmentAngle' avg='0' range='0.3'/>
+					<Setting name='MotherlodeFrequency' avg=':=_default_*0.025'/>
+					<Setting name='MotherlodeHeight' avg=':=_default_-10' range=':=_default_'/>
+				</Veins>
+			</IfCondition>
+		</IfNotChoice>
+		
+		<IfNotChoice name='ifStibnite' value='false'>
+			<CloudPreset name='Stibnite' drawWireframe='false'>
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:945, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.6'/> <!-- Stibnite Ore (Antimony) -->
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:16945, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.3'/> <!-- Small Stibnite Ore (Antimony) -->
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:16826, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.1'/> <!-- Small Cinnabar Ore (Antimony) -->
+				<Setting name='CloudHeight' avg='120' range='30'/>
+				<Setting name='CloudRadius' avg='5' range='2'/>
+				<Setting name='CloudThickness' avg='15' range='3'/>
+				<Setting name='DistributionFrequency' avg='0.06'/>
+				<Setting name='OreDensity' avg='0.3' range='0.1'/>
+				<!-- <Setting name='ParentRangeLimit' avg='60' range='10'/> -->
+				<Biome name='.*'/>
+				<Replaces block='terrafirmacraft:StoneMM:4'/> <!-- Gneiss -->
+				<Replaces block='terrafirmacraft:StoneMM:5'/> <!-- Marble -->	
+				<Replaces block='terrafirmacraft:StoneMM:2'/> <!-- Phyllite -->
+				<Replaces block='terrafirmacraft:StoneMM'/> <!-- Quartzite -->
+				<Replaces block='terrafirmacraft:StoneMM:3'/> <!-- Schist -->
+				<Replaces block='terrafirmacraft:StoneMM:1'/> <!-- Slate -->
+			</CloudPreset>
+			
+			<IfCondition condition=':= if(ifStibnite = "all" | ifStibnite = "small", true, false)'>	
+				<Cloud name='SmallStibnite' inherits='Stibnite' wireframeColor='0xFF20202F'/>
+			</IfCondition>
+			
+			<IfCondition condition=':= if(ifStibnite = "all" | ifStibnite = "big", true, false)'>
+				<Cloud name='BigStibnite' inherits='Stibnite' wireframeColor='0xFF0F0F1E'>
+					<Setting name='CloudRadius' avg=':=_default_*2' range=':=_default_*2'/>
+					<Setting name='CloudThickness' avg=':=_default_*3' range=':=_default_*1.5'/>
+					<Setting name='DistributionFrequency' avg=':=_default_*0.025'/>
+					<Setting name='CloudHeight' avg='75' range='10'/>
+				</Cloud>
+			</IfCondition>
+		</IfNotChoice>
+		
+		<IfNotChoice name='ifPentlandite' value='false'> 
+			<VeinsPreset name='Pentlandite' drawWireframe='false'>
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:909, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.55'/> <!-- Pentlandite Ore (Nickel) -->
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:16909, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.3'/> <!-- Small Pentlandite Ore (Nickel) -->
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:16870, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.1'/> <!-- Small Magnetite Ore (Iron) -->
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:16923, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.05'/> <!-- Small Vanadium Magnetite Ore (Vanadium) -->
+				<!-- <OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:16906, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.2'/> --> <!-- Garnierite Ore (Nickel) -->
+				<!-- <OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:16906, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.1'/> --> <!-- Small Garnierite Ore (Nickel) -->
+				<Setting name='MotherlodeHeight' avg='40' range='30'/>
+				<Setting name='MotherlodeSize' avg='1' range='0'/>
+				<Setting name='BranchLength' avg='60' range='10'/>
+				<Setting name='BranchFrequency' avg='2' range='1'/>
+				<Setting name='SegmentRadius' avg='0.5' range='0.2'/>
+				<Setting name='MotherlodeFrequency' avg='0.03'/>
+				<Biome name='.*'/>
+				<Replaces block='terrafirmacraft:StoneIgIn:2'/> <!-- Gabbro -->
+				<Replaces block='terrafirmacraft:StoneIgIn:1'/> <!-- Diorite -->
+				<Replaces block='terrafirmacraft:StoneIgIn'/> <!-- Granite -->
+				<Replaces block='gregtech:gt.blockgranites'/> <!-- Black Granite -->
+				<Replaces block='gregtech:gt.blockgranites:8'/> <!-- Red Granite -->
+				<Replaces block='terrafirmacraft:StoneIgEx:3'/> <!-- Dacite -->
+			</VeinsPreset>
+			
+			<IfCondition condition=':= if(ifPentlandite = "all" | ifPentlandite = "small", true, false)'>
+				<Veins name='SmallPentlandite' inherits='Pentlandite' wireframeColor='0xFFB3B300'/>
+			</IfCondition>
+			
+			<IfCondition condition=':= if(ifPentlandite = "all" | ifPentlandite = "big", true, false)'>
+				<Veins name='BigPentlandite' inherits='Pentlandite' wireframeColor='0xFF8C8C00'>
+					<Setting name='BranchFrequency' avg='3' range='1'/>
+					<Setting name='SegmentRadius' avg='1.5' range='0.5'/>
+					<Setting name='BranchLength' avg='60' range='10'/>
+					<Setting name='BranchHeightLimit' avg='30' range='10'/>
+					<Setting name='SegmentForkFrequency' avg='0.5' range='0.2'/>
+					<Setting name='BranchInclination' avg='0' range='0.3'/>
+					<Setting name='SegmentAngle' avg='0' range='0.3'/>
+					<Setting name='MotherlodeFrequency' avg=':=_default_*0.025'/>
+					<Setting name='MotherlodeHeight' avg=':=_default_-10' range=':=_default_'/>
+				</Veins>
+			</IfCondition>	
+		</IfNotChoice>
+		
+		<IfNotChoice name='ifMolybdenite' value='false'> 
+			<VeinsPreset name='Molybdenite' drawWireframe='false'>
+				<OreBlock block='gregtech:gt.blockores'
+					nbt='{m:942, n:1, id:"GT_TileEntity_Ores"}'
+					weight='0.6'/> <!-- Molybdenite Ore (Molybdenum) -->
+				<OreBlock block='gregtech:gt.blockores'
+					nbt='{m:16942, n:1, id:"GT_TileEntity_Ores"}'
+					weight='0.25'/> <!-- Small Molybdenite Ore (Molybdenum) -->   
+				<OreBlock block='gregtech:gt.blockores'
+					nbt='{m:16824, n:1, id:"GT_TileEntity_Ores"}'
+					weight='0.06'/> <!-- Small Cassiterite Ore (Tin) -->
+				<OreBlock block='gregtech:gt.blockores'
+					nbt='{m:16855, n:1, id:"GT_TileEntity_Ores"}'
+					weight='0.06'/> <!-- Small Chalcopurite Ore (Copper) -->
+				<OreBlock block='gregtech:gt.blockores'
+					nbt='{m:16841, n:1, id:"GT_TileEntity_Ores"}'
+					weight='0.03'/> <!-- Small Tungstate Ore (Tungsten) -->
+				<Setting name='MotherlodeHeight' avg='90' range='30'/>
+				<Setting name='MotherlodeFrequency' avg='0.04'/>
+				<Setting name='MotherlodeSize' avg='0.5' range='0'/>
+				<Setting name='BranchFrequency' avg='1' range='0'/>
+				<Setting name='BranchLength' avg='50' range='5'/>
+				<Setting name='SegmentRadius' avg='0.8' range='0.4'/>
+				<Biome name='.*'/>
+				<Replaces block='terrafirmacraft:StoneMM:4'/> <!-- Gneiss -->
+				<Replaces block='terrafirmacraft:StoneMM'/> <!-- Quartzite -->
+				<Replaces block='terrafirmacraft:StoneIgIn'/> <!-- Granite -->
+				<Replaces block='gregtech:gt.blockgranites'/> <!-- Black Granite -->
+				<Replaces block='gregtech:gt.blockgranites:8'/> <!-- Red Granite -->
+			</VeinsPreset>
+			
+			<IfCondition condition=':= if(ifMolybdenite = "all" | ifMolybdenite = "small", true, false)'>
+				<Veins name='SmallMolybdenite' inherits='Molybdenite' wireframeColor='0xFF111111'/>
+			</IfCondition>
+			
+			<IfCondition condition=':= if(ifMolybdenite = "all" | ifMolybdenite = "big", true, false)'>
+				<Veins name='BigMolybdenite' inherits='Molybdenite' wireframeColor='0xFF000000'>
+					<Setting name='BranchFrequency' avg='3' range='1'/>
+					<Setting name='SegmentRadius' avg='1.5' range='0.5'/>
+					<Setting name='BranchLength' avg='60' range='10'/>
+					<Setting name='BranchHeightLimit' avg='30' range='10'/>
+					<Setting name='SegmentForkFrequency' avg='0.5' range='0.2'/>
+					<Setting name='BranchInclination' avg='0' range='0.3'/>
+					<Setting name='SegmentAngle' avg='0' range='0.3'/>
+					<Setting name='MotherlodeFrequency' avg=':=_default_*0.025'/>
+					<Setting name='MotherlodeHeight' avg=':=_default_-10' range=':=_default_'/>
+				</Veins>
+			</IfCondition>	
+		</IfNotChoice>
+		
+		<IfNotChoice name='ifMagnesite' value='false'>
+			<CloudPreset name='Magnesite' drawWireframe='false'>
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:908, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.6'/> <!-- Magnesite Ore (Magnesium) -->
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:16908, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.3'/> <!-- Small Magnesite Ore (Magnesium) -->
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:16902, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.1'/> <!-- Small Talc Ore (Magnesium) -->
+				<Setting name='CloudHeight' avg='140' range='40'/>
+				<Setting name='CloudRadius' avg='9' range='2'/>
+				<Setting name='CloudThickness' avg='4' range='1'/>
+				<Setting name='OreDensity' avg='0.2' range='0.1'/>
+				<Setting name='DistributionFrequency' avg='0.06'/>
+				<Biome name='.*'/>
+				<Replaces block='terrafirmacraft:StoneIgIn:1'/> <!-- Diorite -->
+				<Replaces block='terrafirmacraft:StoneSed:2'/> <!-- Rock salt -->
+				<Replaces block='terrafirmacraft:StoneMM:5'/> <!-- Marble -->
+				<Replaces block='terrafirmacraft:StoneSed:4'/> <!-- Conglomerate -->
+				<Replaces block='terrafirmacraft:StoneSed:3'/> <!-- Limestone -->
+				<Replaces block='terrafirmacraft:StoneSed:1'/> <!-- Claystone -->
+				<Replaces block='terrafirmacraft:StoneSed'/> <!-- Shale -->
+			</CloudPreset>
+			
+			<IfCondition condition=':= if(ifMagnesite = "all" | ifMagnesite = "small", true, false)'>	
+				<Cloud name='SmallMagnesite' inherits='Magnesite' wireframeColor='0xFF9FA576'/>
+			</IfCondition>
+			
+			<IfCondition condition=':= if(ifMagnesite = "all" | ifMagnesite = "big", true, false)'>
+				<Cloud name='BigMagnesite' inherits='Magnesite' wireframeColor='0xFF898D67'>
+					<Setting name='CloudRadius' avg=':=_default_*4' range=':=_default_*2'/>
+					<Setting name='CloudThickness' avg=':=_default_*2' range=':=_default_*1.5'/>
+					<Setting name='DistributionFrequency' avg=':=_default_*0.025'/>
+					<Setting name='CloudHeight' avg='120' range='20'/>
+				</Cloud>
+			</IfCondition>
+		</IfNotChoice>
+		
+		<IfNotChoice name='ifPyrolusite' value='false'>
+			<CloudPreset name='Pyrolusite' drawWireframe='false'>
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:943, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.6'/> <!-- Pyrolusite Ore (Manganese) -->
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:16943, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.4'/> <!-- Small Pyrolusite Ore (Manganese) -->
+				<Setting name='CloudHeight' avg='140' range='30'/>
+				<Setting name='CloudRadius' avg='9' range='2'/>
+				<Setting name='CloudThickness' avg='4' range='1'/>
+				<Setting name='OreDensity' avg='0.2' range='0.1'/>
+				<Setting name='DistributionFrequency' avg='0.06'/>
+				<Biome name='.*'/>
+				<Replaces block='terrafirmacraft:StoneSed:7'/> <!-- Chalk -->
+				<Replaces block='terrafirmacraft:StoneSed:6'/> <!-- Chert -->
+				<Replaces block='terrafirmacraft:StoneSed'/> <!-- Shale -->
+				<Replaces block='terrafirmacraft:StoneSed:4'/> <!-- Conglomerate -->
+				<Replaces block='terrafirmacraft:StoneSed:3'/> <!-- Limestone -->
+				<Replaces block='terrafirmacraft:StoneSed:1'/> <!-- Claystone -->
+			</CloudPreset>
+			
+			<IfCondition condition=':= if(ifPyrolusite = "all" | ifPyrolusite = "small", true, false)'>	
+				<Cloud name='SmallPyrolusite' inherits='Pyrolusite' wireframeColor='0xFF656673'/>
+			</IfCondition>
+			
+			<IfCondition condition=':= if(ifPyrolusite = "all" | ifPyrolusite = "big", true, false)'>
+				<Cloud name='BigPyrolusite' inherits='Pyrolusite' wireframeColor='0xFF4D525C'>
+					<Setting name='CloudRadius' avg=':=_default_*4' range=':=_default_*2'/>
+					<Setting name='CloudThickness' avg=':=_default_*2' range=':=_default_*1.5'/>
+					<Setting name='DistributionFrequency' avg=':=_default_*0.025'/>
+					<Setting name='CloudHeight' avg='120' range='20'/>
+				</Cloud>
+			</IfCondition>
+		</IfNotChoice>
+
+		<IfNotChoice name='ifChromite' value='false'> 
+			<VeinsPreset name='Chromite' drawWireframe='false'>
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:825, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.6'/> <!-- Chromite Ore (Chrome) -->
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:16825, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.3'/> <!-- Small Chromite Ore (Chrome) -->
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:16505, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.1'/> <!-- Small Olivine Ore (Olivine) -->
+				<Setting name='MotherlodeHeight' avg='40' range='30'/>
+				<Setting name='MotherlodeSize' avg='1' range='0'/>
+				<Setting name='BranchLength' avg='40' range='5'/>
+				<Setting name='SegmentRadius' avg='0.5' range='0.2'/>
+				<Setting name='MotherlodeFrequency' avg='0.04'/>
+				<Biome name='.*'/>
+				<Replaces block='terrafirmacraft:StoneIgIn:2'/> <!-- Gabbro -->
+				<Replaces block='terrafirmacraft:StoneIgIn:1'/> <!-- Diorite -->
+				<Replaces block='terrafirmacraft:StoneIgIn'/> <!-- Granite -->
+				<Replaces block='gregtech:gt.blockgranites'/> <!-- Black Granite -->
+				<Replaces block='gregtech:gt.blockgranites:8'/> <!-- Red Granite -->
+				<Replaces block='terrafirmacraft:StoneIgEx'/> <!-- Rhyalite -->
+			</VeinsPreset>
+			
+			<IfCondition condition=':= if(ifChromite = "all" | ifChromite = "small", true, false)'>
+				<Veins name='SmallChromite' inherits='Chromite' wireframeColor='0xFF130B08'/>
+			</IfCondition>
+			
+			<IfCondition condition=':= if(ifChromite = "all" | ifChromite = "big", true, false)'>
+				<Veins name='BigChromite' inherits='Chromite' wireframeColor='0xFF130B08'>
+					<Setting name='BranchFrequency' avg='3' range='1'/>
+					<Setting name='SegmentRadius' avg='1.5' range='0.5'/>
+					<Setting name='BranchLength' avg='60' range='10'/>
+					<Setting name='BranchHeightLimit' avg='30' range='10'/>
+					<Setting name='SegmentForkFrequency' avg='0.5' range='0.2'/>
+					<Setting name='BranchInclination' avg='0' range='0.3'/>
+					<Setting name='SegmentAngle' avg='0' range='0.3'/>
+					<Setting name='MotherlodeFrequency' avg=':=_default_*0.025'/>
+					<Setting name='MotherlodeHeight' avg=':=_default_-10' range=':=_default_'/>
+				</Veins>
+			</IfCondition>
+		</IfNotChoice>
+		
+		<IfNotChoice name='ifCobaltite' value='false'> 
+			<VeinsPreset name='Cobaltite' drawWireframe='false'>
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:827, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.55'/> <!-- Cobaltite Ore (Cobalt) -->
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:16827, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.25'/> <!-- Small Cobaltite Ore (Cobalt) -->
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:16839, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.1'/> <!-- Small Sphalerite Ore (Zinc) -->
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:16530, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.1'/> <!-- Small Apatite Ore (Phosphor) -->
+				<Setting name='MotherlodeHeight' avg='40' range='30'/>
+				<Setting name='MotherlodeSize' avg='2' range='1'/>
+				<Setting name='BranchLength' avg='20' range='5'/>
+				<Setting name='MotherlodeRangeLimit' avg='100' range='15'/>
+				<Setting name='SegmentRadius' avg='1' range='0.5'/>
+				<Setting name='MotherlodeFrequency' avg='0.06'/>
+				<Biome name='.*'/>
+				<!-- <Replaces block='air'/> -->
+				<Replaces block='terrafirmacraft:StoneIgIn:2'/> <!-- Gabbro -->
+				<Replaces block='terrafirmacraft:StoneIgIn:1'/> <!-- Diorite -->
+				<Replaces block='terrafirmacraft:StoneIgIn'/> <!-- Granite -->
+				<Replaces block='gregtech:gt.blockgranites'/> <!-- Black Granite -->
+				<Replaces block='gregtech:gt.blockgranites:8'/> <!-- Red Granite -->
+				<Replaces block='terrafirmacraft:StoneIgEx:1'/> <!-- Basalt -->
+			</VeinsPreset>
+
+			<IfCondition condition=':= if(ifCobaltite = "all" | ifCobaltite = "small", true, false)'>
+				<Veins name='SmallCobaltite' inherits='Cobaltite' wireframeColor='0xFF31339C'/>
+			</IfCondition>
+			
+			<IfCondition condition=':= if(ifCobaltite = "all" | ifCobaltite = "big", true, false)'>
+				<Veins name='BigCobaltite' inherits='Cobaltite' wireframeColor='0xFF202267'>
+					<Setting name='BranchFrequency' avg='3' range='1'/>
+					<Setting name='SegmentRadius' avg='1.5' range='0.5'/>
+					<Setting name='BranchLength' avg='60' range='10'/>
+					<Setting name='BranchHeightLimit' avg='30' range='10'/>
+					<Setting name='SegmentForkFrequency' avg='0.5' range='0.2'/>
+					<Setting name='BranchInclination' avg='0' range='0.3'/>
+					<Setting name='SegmentAngle' avg='0' range='0.3'/>
+					<Setting name='MotherlodeFrequency' avg=':=_default_*0.025'/>
+					<Setting name='MotherlodeHeight' avg=':=_default_-10' range=':=_default_'/>
+				</Veins>
+			</IfCondition>
+		</IfNotChoice>
+
+		<IfNotChoice name='ifOlivine' value='false'> 
+			<StandardGen name='Olivine' inherits='AllStone' drawWireframe='false' wireframeColor='0xFF9CB770'>
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:505, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='1'/>
+				<Setting name='Height' avg='8' range='3'/>
+				<Setting name='Size' avg='5'/> 
+				<Setting name='Frequency' avg='0.06'/>
+				<Biome name='.*'/>
+				<!-- <Replaces block='air'/> -->
+			</StandardGen>
+		</IfNotChoice>
+
+		<IfNotChoice name='ifGems' value='false'> 
+			<StandardGenPreset name='Gems' inherits='AllStone' drawWireframe='false' wireframeColor='0xFF9C121F'>
+				<Setting name='Height' avg='20' range='10'/>
+				<Setting name='Size' avg='5'/> 
+				<Setting name='Frequency' avg='0.06'/>
+				<Biome name='.*'/>
+				<!-- <Replaces block='air'/> -->
+			</StandardGenPreset>
+			
+			<StandardGen name='Emerald' inherits='Gems'>
+				<OreBlock block='gregtech:gt.blockores' nbt='{m:16501, n:1, id:"GT_TileEntity_Ores"}'/>
+			</StandardGen>
+			<StandardGen name='Ruby' inherits='Gems'>
+				<OreBlock block='gregtech:gt.blockores' nbt='{m:16502, n:1, id:"GT_TileEntity_Ores"}'/>
+			</StandardGen>
+			<StandardGen name='Sapphire' inherits='Gems'>
+				<OreBlock block='gregtech:gt.blockores' nbt='{m:16503, n:1, id:"GT_TileEntity_Ores"}'/>
+			</StandardGen>
+			<StandardGen name='Green Sapphire' inherits='Gems'>
+				<OreBlock block='gregtech:gt.blockores' nbt='{m:16504, n:1, id:"GT_TileEntity_Ores"}'/>
+			</StandardGen>
+			<StandardGen name='Olivine' inherits='Gems'>
+				<OreBlock block='gregtech:gt.blockores' nbt='{m:16505, n:1, id:"GT_TileEntity_Ores"}'/>
+			</StandardGen>
+			<StandardGen name='Topaz' inherits='Gems'>
+				<OreBlock block='gregtech:gt.blockores' nbt='{m:16507, n:1, id:"GT_TileEntity_Ores"}'/>
+			</StandardGen>
+			<StandardGen name='Tanzanite' inherits='Gems'>
+				<OreBlock block='gregtech:gt.blockores' nbt='{m:16508, n:1, id:"GT_TileEntity_Ores"}'/>
+			</StandardGen>
+			<StandardGen name='Amethyst' inherits='Gems'>
+				<OreBlock block='gregtech:gt.blockores' nbt='{m:16509, n:1, id:"GT_TileEntity_Ores"}'/>
+			</StandardGen>
+		</IfNotChoice>
+		
+		
+			<StandardGenPreset name='SmallOres' inherits='AllStone' drawWireframe='false' wireframeColor='0xFFFFFFFF'>
+				<Setting name='Height' avg='65' range='65'/>
+				<Setting name='Size' avg='5'/>
+				<Setting name='Frequency' avg=':= ifSmallOres'/>
+				<Biome name='.*'/>
+			</StandardGenPreset>
+			
+			<StandardGen name='SmallDiamond' inherits='SmallOres' drawWireframe='false' wireframeColor='0xFFFFFFFF'>
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:16500, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.7'/> <!-- Small Diamond Ore -->
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:16865, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.1'/> <!-- Small Graphite Ore -->
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:16533, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.2'/> <!-- Small Coal Ore -->
+				<Setting name='Height' avg='20' range='15'/>
+				<Setting name='Size' avg='3'/>
+				<Setting name='Frequency' avg=':= _default_ * 0.5'/>
+				<Biome name='.*'/>
+			</StandardGen>
+			
+			<StandardGen name='SmallApatite' inherits='SmallOres' drawWireframe='false' wireframeColor='0xFFFFFFFF'>
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:16530, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.8'/> <!-- Small Apatite Ore -->
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:16833, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.1'/> <!-- Small Phosphate Ore -->
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:16534, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.1'/> <!-- Small Phosphorus Ore -->
+				<Setting name='Height' avg='70' range='30'/>
+				<Setting name='Size' avg='2'/>
+				<Setting name='Frequency' avg=':= _default_ * 1'/>
+				<Biome name='.*'/>
+			</StandardGen>
+			
+			<StandardGen name='SmallBauxite' inherits='SmallOres' drawWireframe='false' wireframeColor='0xFFFFFFFF'>
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:16822, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.8'/> <!-- Small Bauxite Ore -->
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:16918, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.2'/> <!-- Small Ilmenite Ore -->
+				<Setting name='Height' avg='90' range='30'/>
+				<Setting name='Size' avg='3'/>
+				<Setting name='Frequency' avg=':= _default_ * 1'/>
+				<Biome name='.*'/>
+			</StandardGen>
+			
+			<StandardGen name='SmallGalena' inherits='SmallOres' drawWireframe='false' wireframeColor='0xFFFFFFFF'>
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:16830, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.6'/> <!-- Small Galena Ore -->
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:16045, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.4'/> <!-- Small Silver Ore -->
+				<Setting name='Height' avg='60' range='30'/>
+				<Setting name='Size' avg='3'/>
+				<Setting name='Frequency' avg=':= _default_ * 1'/>
+				<Biome name='.*'/>
+			</StandardGen>
+			
+			<StandardGen name='SmallGold' inherits='SmallOres' drawWireframe='false' wireframeColor='0xFFFFFFFF'>
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:16086, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.6'/> <!-- Small Gold Ore -->
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:16870, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.2'/> <!-- Small Magnetite Ore -->
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:16923, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.2'/> <!-- Small Vanadium Magnetite Ore -->
+				<Setting name='Height' avg='120' range='30'/>
+				<Setting name='Size' avg='2'/>
+				<Setting name='Frequency' avg=':= _default_ * 1'/>
+				<Biome name='.*'/>
+			</StandardGen>
+			
+		
+		
+		<IfNotChoice name='ifIridium' value='false'> 
+			<StandardGen name='Iridium' inherits='AllStone' drawWireframe='false' wireframeColor='0xFFFFFFFF'>
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:84, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.6'/> <!-- Iridium Ore (Iridium) -->
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:16084, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.4'/> <!-- Small Iridium Ore (Iridium) -->
+				<Setting name='Height' avg='125' range='125'/>
+				<Setting name='Size' avg='2'/>
+				<Setting name='Frequency' avg='0.03'/>
+				<Biome name='.*'/>
+				<!-- <Replaces block='air'/> -->
+			</StandardGen>
+		</IfNotChoice>
+		
+		<IfNotChoice name='ifOilsands' value='false'>
+			<CloudPreset name='Oilsands' drawWireframe='false'>
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:1878, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='1'/>
+				<Setting name='CloudHeight' avg='90' range='20'/>
+				<Setting name='CloudRadius' avg='20' range='5'/>
+				<Setting name='CloudThickness' avg='2.5' range='0.5'/>
+				<Setting name='OreDensity' avg='1' range='0'/>
+				<Setting name='DistributionFrequency' avg='0.04'/>
+				<Setting name='CloudSizeNoise' avg='0'/>
+				<Biome name='.*'/>
+				<Replaces block='terrafirmacraft:StoneMM:3'/> <!-- Schist -->
+				<Replaces block='terrafirmacraft:StoneSed'/> <!-- Shale -->
+				<Replaces block='terrafirmacraft:StoneMM:1'/> <!-- Slate -->
+				<Replaces block='terrafirmacraft:StoneMM'/> <!-- Quartzite -->
+				<Replaces block='terrafirmacraft:StoneMM:4'/> <!-- Gneiss -->
+			</CloudPreset>
+			
+			<IfCondition condition=':= if(ifOilsands = "all" | ifOilsands = "small", true, false)'>	
+				<Cloud name='SmallOilsands' inherits='Oilsands' wireframeColor='0xFF000000'/>
+			</IfCondition>
+			
+			<IfCondition condition=':= if(ifOilsands = "all" | ifOilsands = "big", true, false)'>
+				<Cloud name='BigOilsands' inherits='Oilsands' wireframeColor='0xFF000000'>
+					<Setting name='CloudRadius' avg=':=_default_*3' range=':=_default_*1.5'/>
+					<Setting name='CloudThickness' avg=':=_default_*2' range=':=_default_*1.5'/>
+					<Setting name='DistributionFrequency' avg=':=_default_*0.025'/>
+					<Setting name='CloudHeight' avg='70' range='10'/>
+				</Cloud>
+			</IfCondition>
+		</IfNotChoice>
+		
+		<IfNotChoice name='ifPyrites' value='false'> <!-- Chalcopyrite + Pyrite + Galena + Sphalerite  -->
+			<CloudPreset name='Pyrites' drawWireframe='false'>
+				<OreBlock block='gregtech:gt.blockores' 
+						  nbt='{m:834, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.24'/> <!-- Pyrite Ore -->
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:16834, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.1'/> <!-- Small Pyrite Ore -->
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:855, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.35'/> <!-- Chalcopyrite Ore -->
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:16855, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.15'/> <!-- Small Chalcopyrite Ore -->
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:16830, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.08'/> <!-- Small Galena Ore -->
+				<OreBlock block='gregtech:gt.blockores'
+						  nbt='{m:16839, n:1, id:"GT_TileEntity_Ores"}'
+						  weight='0.08'/> <!-- Small Sphalerite Ore -->
+				<Setting name='CloudHeight' avg='100' range='20'/>
+				<Setting name='CloudRadius' avg='15' range='5'/>
+				<Setting name='CloudThickness' avg='7' range='3'/>
+				<Setting name='OreDensity' avg='0.3' range='0.1'/>
+				<Setting name='DistributionFrequency' avg='0.04'/>
+				<Biome name='.*'/>
+				<Replaces block='terrafirmacraft:StoneIgEx:3'/> <!-- Dacite -->
+				<Replaces block='terrafirmacraft:StoneIgEx'/> <!-- Rhyalite -->
+				<Replaces block='terrafirmacraft:StoneIgIn:2'/> <!-- Gabbro -->
+				<Replaces block='terrafirmacraft:StoneMM:4'/> <!-- Gneiss -->
+				<Replaces block='terrafirmacraft:StoneMM:2'/> <!-- Phyllite -->
+				<Replaces block='terrafirmacraft:StoneMM'/> <!-- Quartzite -->
+				<Replaces block='terrafirmacraft:StoneMM:1'/> <!-- Slate -->
+			</CloudPreset>
+			
+			<IfCondition condition=':= if(ifPyrites = "all" | ifPyrites = "small", true, false)'>	
+				<Cloud name='SmallPyrites' inherits='Pyrites' wireframeColor='0xFF4CD2FF'/>
+			</IfCondition>
+			
+			<IfCondition condition=':= if(ifPyrites = "all" | ifPyrites = "big", true, false)'>
+				<Cloud name='BigPyrites' inherits='Pyrites' wireframeColor='0xFF00BFFF'>
+					<Setting name='CloudRadius' avg=':=_default_*4' range=':=_default_*2'/>
+					<Setting name='CloudThickness' avg=':=_default_*2' range=':=_default_*1.5'/>
+					<Setting name='DistributionFrequency' avg=':=_default_*0.025'/>
+					<Setting name='CloudHeight' avg='90' range='10'/>
+				</Cloud>
+			</IfCondition>
+		</IfNotChoice>
+		
+		<IfChoice name='ifGlowstone' value='true'> <!-- GS -->
+			<CloudPreset name="Outgrowths">
+				<Setting name='CloudHeight' avg='60' range='50'/>
+				<Setting name='CloudRadius' avg='4' range='0'/>
+				<Setting name='CloudThickness' avg='3' range='0'/>
+				<Setting name='ParentRangeLimit' avg='0' range='0'/>
+				<Setting name='OreDensity' avg='1' range='0'/>
+				<Setting name='CloudSizeNoise' avg='0'/>
+				<Setting name='OreVolumeNoiseCutoff' avg='0'/>
+				<Setting name='CloudInclination' avg='0' range='0'/>
+				<Setting name='DistributionFrequency' avg='0.5'/>
+				<Biome name='.*'/>
+			</CloudPreset>
+			
+			<CloudPreset name="OutgrowthsGS" inherits='Outgrowths' drawWireframe='false' wireframeColor='0xFFD90000'>
+				<OreBlock block='minecraft:glowstone' weight='0.9'/>
+				<PlacesBelow block='terrafirmacraft:StoneIgIn'/>
+				<PlacesBelow block='terrafirmacraft:StoneIgIn:1'/>
+				<PlacesBelow block='terrafirmacraft:StoneIgIn:2'/>
+				<PlacesBelow block='terrafirmacraft:StoneMM'/>
+				<PlacesBelow block='terrafirmacraft:StoneMM:1'/>
+				<PlacesBelow block='terrafirmacraft:StoneMM:2'/>
+				<PlacesBelow block='terrafirmacraft:StoneMM:3'/>
+				<PlacesBelow block='terrafirmacraft:StoneMM:4'/>
+				<PlacesBelow block='terrafirmacraft:StoneMM:5'/>
+				<PlacesBelow block='terrafirmacraft:StoneSed'/>
+				<PlacesBelow block='terrafirmacraft:StoneSed:1'/>
+				<PlacesBelow block='terrafirmacraft:StoneSed:2'/>
+				<PlacesBelow block='terrafirmacraft:StoneSed:3'/>
+				<PlacesBelow block='terrafirmacraft:StoneSed:4'/>
+				<PlacesBelow block='terrafirmacraft:StoneSed:5'/>
+				<PlacesBelow block='terrafirmacraft:StoneSed:6'/>
+				<PlacesBelow block='terrafirmacraft:StoneSed:7'/>
+				<PlacesBelow block='terrafirmacraft:StoneIgEx'/>
+				<PlacesBelow block='terrafirmacraft:StoneIgEx:1'/>
+				<PlacesBelow block='terrafirmacraft:StoneIgEx:2'/>
+				<PlacesBelow block='terrafirmacraft:StoneIgEx:3'/>
+				<Replaces block='air'/>
+				<PlacesAbove block='air'/>
+			</CloudPreset> 
+			
+			<CloudPreset name="OutgrowthsGS2" inherits='Outgrowths' drawWireframe='false' wireframeColor='0xFFD90000'>
+				<OreBlock block='minecraft:glowstone' weight='0.7'/>
+				<PlacesBelow block='minecraft:glowstone'/>
+				<Replaces block='air'/>
+				<PlacesAbove block='air'/>
+			</CloudPreset>
+			
+			<CloudPreset name="OutgrowthsGS3" inherits='Outgrowths' drawWireframe='false' wireframeColor='0xFFD90000'>
+				<OreBlock block='minecraft:glowstone' weight='0.4'/>
+				<PlacesBelow block='minecraft:glowstone'/>
+				<Replaces block='air'/>
+				<PlacesAbove block='air'/>
+			</CloudPreset>   
+
+			<Cloud name='OutgrowthsGS' inherits='OutgrowthsGS' seed='0xF189'/>
+			<Cloud name='OutgrowthsGS2' inherits='OutgrowthsGS2' seed='0xF189'/>
+			<Cloud name='OutgrowthsGS3' inherits='OutgrowthsGS3' seed='0xF189'/>
+		</IfChoice>
+
+		
+	</ConfigSection>
+</IfModInstalled>
