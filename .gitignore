@@ -3,6 +3,7 @@ Thumbs.db
 ehthumbs.db
 
 # Не важное
+.idea/
 asm/
 crash-reports/
 dumps/

@@ -9,7 +9,8 @@ import mods.gregtech.ChemicalReactor;
 
 
 //------Remove crafting------
-
+// Induction Smelter
+recipes.remove(<tfctech:InductionSmelter>);
 
 
 //======ADD ORE DICTIONARY======
@@ -24,6 +25,11 @@ oreWoodRubber.add(<tfctech:item.Log>);
 //======ADD RECIPES======
 
 //------Shaped------
+// Induction Smelter
+recipes.addShaped(<tfctech:InductionSmelter>,
+ [[<tfctech:item.Inductor>, <terrafirmacraft:Crucible>, <tfctech:item.Inductor>],
+  [<tfctech:item.Inductor>, <ore:circuitBasic>, <tfctech:item.Inductor>],
+  [<ore:platePlatinum>, <ore:wireCopper>, <ore:plateSteel>]]);
 
 //------Shapeless------
 

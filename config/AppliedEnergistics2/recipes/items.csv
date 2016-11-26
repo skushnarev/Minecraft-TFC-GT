@@ -2356,6 +2356,8 @@ Railcraft:machine.delta:0, Electric Shunting Wire
 tfctech:Ore4:0, Bauxite
 tfctech:Latex, Latex
 tfctech:LatexExtractor, Rubber Tapping
+tfctech:WireDrawBench, tile.WireDrawBench.name
+tfctech:InductionSmelter, Induction Smelter
 tfctech:Hevea:0, Hevea Log
 tfctech:Hevea1:0, Hevea Log
 tfctech:Hevea2:0, Hevea Log
@@ -8253,6 +8255,8 @@ tfctech:item.Steel Dust, Steel Dust
 tfctech:item.Sterling Silver Dust, Sterling Silver Dust
 tfctech:item.Tin Dust, Tin Dust
 tfctech:item.Zinc Dust, Zinc Dust
+tfctech:item.Red Alloy Dust, Red Alloy Dust
+tfctech:item.Red Alloy Mix, Red Alloy Mix
 tfctech:item.Aluminum Nugget, Aluminum Nugget
 tfctech:item.Constantan Nugget, Constantan Nugget
 tfctech:item.Electrum Nugget, Electrum Nugget
@@ -8278,6 +8282,7 @@ tfctech:item.Steel Nugget, Steel Nugget
 tfctech:item.Sterling Silver Nugget, Sterling Silver Nugget
 tfctech:item.Tin Nugget, Tin Nugget
 tfctech:item.Zinc Nugget, Zinc Nugget
+tfctech:item.Red Alloy Nugget, Red Alloy Nugget
 tfctech:item.Aluminum Ingot, Aluminum Ingot
 tfctech:item.Aluminum Double Ingot, Aluminum Double Ingot
 tfctech:item.Aluminum Unshaped, Unshaped: Aluminum
@@ -8290,6 +8295,8 @@ tfctech:item.Constantan Unshaped, Unshaped: Constantan
 tfctech:item.Invar Ingot, Invar Ingot
 tfctech:item.Invar Double Ingot, Invar Double Ingot
 tfctech:item.Invar Unshaped, Unshaped: Invar
+tfctech:item.Red Alloy Ingot, Red Alloy Ingot
+tfctech:item.Red Alloy Unshaped, Unshaped: Red Alloy
 tfctech:item.Ore:0, Bauxite
 tfctech:item.Ore:1, Rich Bauxite
 tfctech:item.Ore:2, Poor Bauxite
@@ -8364,22 +8371,22 @@ tfctech:item.Dixie, Dixie (Empty)
 tfctech:item.Dixie Bones, Dixie (Water+Bones)
 tfctech:item.Dixie Glue, Dixie (Glue)
 tfctech:item.Glue, Glue
-tfctech:item.Lime Paint:0, Lime Paint (Lime)
-tfctech:item.Lime Paint:1, Lime Paint (Black)
-tfctech:item.Lime Paint:2, Lime Paint (Blue)
-tfctech:item.Lime Paint:3, Lime Paint (Cyan)
-tfctech:item.Lime Paint:4, Lime Paint (Gray)
-tfctech:item.Lime Paint:5, Lime Paint (Yellow)
-tfctech:item.Lime Paint:6, Lime Paint (Orange)
-tfctech:item.Lime Paint:7, Lime Paint (Green)
-tfctech:item.Lime Paint:8, Lime Paint (Brown)
+tfctech:item.Lime Paint:0, Lime Paint (Black)
+tfctech:item.Lime Paint:1, Lime Paint (Red)
+tfctech:item.Lime Paint:2, Lime Paint (Green)
+tfctech:item.Lime Paint:3, Lime Paint (Brown)
+tfctech:item.Lime Paint:4, Lime Paint (Blue)
+tfctech:item.Lime Paint:5, Lime Paint (Purple)
+tfctech:item.Lime Paint:6, Lime Paint (Cyan)
+tfctech:item.Lime Paint:7, Lime Paint (Silver)
+tfctech:item.Lime Paint:8, Lime Paint (Gray)
 tfctech:item.Lime Paint:9, Lime Paint (Pink)
-tfctech:item.Lime Paint:10, Lime Paint (Silver)
-tfctech:item.Lime Paint:11, Lime Paint (Light Blue)
-tfctech:item.Lime Paint:12, Lime Paint (White)
-tfctech:item.Lime Paint:13, Lime Paint (Red)
-tfctech:item.Lime Paint:14, Lime Paint (Purple)
-tfctech:item.Lime Paint:15, Lime Paint (Magenta)
+tfctech:item.Lime Paint:10, Lime Paint (Lime)
+tfctech:item.Lime Paint:11, Lime Paint (Yellow)
+tfctech:item.Lime Paint:12, Lime Paint (Light Blue)
+tfctech:item.Lime Paint:13, Lime Paint (Magenta)
+tfctech:item.Lime Paint:14, Lime Paint (Orange)
+tfctech:item.Lime Paint:15, Lime Paint (White)
 tfctech:item.Tin Stripe, Tin Strip
 tfctech:item.Aluminum Stripe, Aluminum Strip
 tfctech:item.Copper Stripe, Copper Strip
@@ -8389,6 +8396,13 @@ tfctech:item.Wrought Iron Stripe, Wrought Iron Strip
 tfctech:item.Steel Stripe, Steel Strip
 tfctech:item.Groove, Groove
 tfctech:item.Bowl Mount, Bowl Mount
+tfctech:item.Winch, Winch
+tfctech:item.Leather Belt, Leather Belt
+tfctech:item.Tongs, Tongs
+tfctech:item.Circuit:0, Circuit Board
+tfctech:item.Circuit:1, Frequency Generator Circuit
+tfctech:item.Inductor, Inductor
+tfctech:item.Wire Draw Bench, Wire Draw Bench
 tfctech:item.Tin Wire, Tin Wire
 tfctech:item.Copper Wire, Copper Wire
 tfctech:item.Gold Wire, Gold Wire
@@ -8396,6 +8410,7 @@ tfctech:item.Aluminum Wire, Aluminum Wire
 tfctech:item.Electrum Wire, Electrum Wire
 tfctech:item.Wrought Iron Wire, Iron Wire
 tfctech:item.Steel Wire, Steel Wire
+tfctech:item.Red Alloy Wire, Red Alloy Wire
 tfctech:item.Unfinished Tin Wire:0, Unfinished Tin Wire
 tfctech:item.Unfinished Copper Wire:0, Unfinished Copper Wire
 tfctech:item.Unfinished Gold Wire:0, Unfinished Gold Wire
@@ -8403,6 +8418,11 @@ tfctech:item.Unfinished Aluminum Wire:0, Unfinished Aluminum Wire
 tfctech:item.Unfinished Electrum Wire:0, Unfinished Electrum Wire
 tfctech:item.Unfinished Wrought Iron Wire:0, Unfinished Iron Wire
 tfctech:item.Unfinished Steel Wire:0, Unfinished Steel Wire
+tfctech:item.Unfinished Red Alloy Wire:0, Unfinished Red Alloy Wire
+tfctech:item.Wrought Iron Drawplate, Wrought Iron Drawplate
+tfctech:item.Steel Drawplate, Steel Drawplate
+tfctech:item.Black Steel Drawplate, Black Steel Drawplate
+tfctech:item.Oil Can, Oil Can
 tfctech:item.Gear Piece Mold:0, Clay Gear Piece Mold
 tfctech:item.Gear Piece Mold:1, Gear Piece Mold
 tfctech:item.Sleeve Mold:0, Clay Sleeve Mold
