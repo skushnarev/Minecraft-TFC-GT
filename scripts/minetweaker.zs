@@ -13,7 +13,7 @@ import mods.gregtech.Assembler;
 import mods.gregtech.Centrifuge;
 import minetweaker.item.IItemStack;
 import minetweaker.item.IIngredient;
-
+import mods.gregtech.ChemicalBath;
 
 
 //======REMOVE RECIPES======
@@ -31,21 +31,10 @@ recipes.remove (<terrafirmacraft:LitPumpkin>);
 recipes.remove(<Railcraft:machine.alpha:7>);
 // Water Tank Siding
 recipes.remove(<Railcraft:machine.alpha:14>);
-// ME Controller
-recipes.remove(<appliedenergistics2:tile.BlockController>);
+
 // Vanila rail
 recipes.remove(<minecraft:rail> * 64);
-// Applet quartz tools
-recipes.remove(<appliedenergistics2:item.ToolCertusQuartzAxe>);
-recipes.remove(<appliedenergistics2:item.ToolCertusQuartzHoe>);
-recipes.remove(<appliedenergistics2:item.ToolCertusQuartzSpade>);
-recipes.remove(<appliedenergistics2:item.ToolCertusQuartzPickaxe>);
-recipes.remove(<appliedenergistics2:item.ToolCertusQuartzSword>);
-recipes.remove(<appliedenergistics2:item.ToolNetherQuartzAxe>);
-recipes.remove(<appliedenergistics2:item.ToolNetherQuartzHoe>);
-recipes.remove(<appliedenergistics2:item.ToolNetherQuartzSpade>);
-recipes.remove(<appliedenergistics2:item.ToolNetherQuartzPickaxe>);
-recipes.remove(<appliedenergistics2:item.ToolNetherQuartzSword>);
+
 // Solid Fueled Boiler Firbox
 recipes.remove(<Railcraft:machine.beta:5>);
 // Liquid Fueled Boiler Firbox
@@ -57,7 +46,6 @@ recipes.remove(<minecraft:redstone_lamp>);
 recipes.remove(<minecraft:glowstone>);
 recipes.remove(<IC2NuclearControl:blockNuclearControlLight>);
 recipes.remove(<IC2NuclearControl:blockNuclearControlLight:*>);
-recipes.remove(<appliedenergistics2:tile.BlockQuartzLamp>);
 recipes.remove(<Railcraft:lantern.stone>);
 recipes.remove(<Railcraft:lantern.stone:*>);
 recipes.remove(<Railcraft:lantern.metal>);
@@ -67,7 +55,10 @@ recipes.remove(<terrafirmacraft:item.Clay:1>);
 // Bronze Dust
 recipes.remove (<gregtech:gt.metaitem.01:2300>); 
 recipes.remove (<IC2:itemDust>);
-
+//Bucket Empty
+recipes.remove(<minecraft:bucket>);
+//Rock Crusher
+recipes.remove(<Railcraft:machine.alpha:15>);
 
 
 
@@ -109,10 +100,6 @@ recipes.addShaped(<Railcraft:machine.alpha:14> * 6,
  [[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>],
   [<ore:plateAnyIron>, null, <ore:plateAnyIron>],
   [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]]);
-recipes.addShaped(<appliedenergistics2:tile.BlockController>,
- [[<ore:plateObsidian>, <ore:crystalPureFluix>, <ore:plateObsidian>],
-  [<ore:crystalPureFluix>, <appliedenergistics2:item.ItemMultiMaterial:24>, <ore:crystalPureFluix>],
-  [<ore:plateObsidian>, <ore:crystalPureFluix>, <ore:plateObsidian>]]);
 // Solid Fueled Boiler Firbox
 recipes.addShaped(<Railcraft:machine.beta:5>, 
  [[<ore:ingotBrick>, <ore:ingotBrick>, <ore:ingotBrick>], 
@@ -129,7 +116,7 @@ recipes.addShaped(<StevesWorkshop:production_table_upgrade:2>,
 //Bucket bug fix
 //recipes.addShaped(<terrafirmacraft:item.Wooden Bucket Empty>, [[<minecraft:bucket>]]);
 // Fire Clay
-recipes.addShaped(<terrafirmacraft:item.Clay:1> * 9,
+recipes.addShaped(<terrafirmacraft:item.Clay:1> * 3,
  [[<ore:dustKaolinite>, <ore:dustGraphite>, <ore:dustKaolinite>],
   [<ore:dustGraphite>, <ore:lumpClay>, <ore:dustGraphite>],
   [<ore:dustKaolinite>, <ore:dustGraphite>, <ore:dustKaolinite>]]);
@@ -153,9 +140,6 @@ recipes.addShapeless(<minecraft:gold_ingot>,
 recipes.addShapeless(<minecraft:paper>,
  [<ore:itemKnife>.transformDamage(1), <terrafirmacraft:item.Wooden Bucket Water>.transformReplace(<terrafirmacraft:item.Wooden Bucket Empty>),
   <ore:itemReed>, <ore:itemReed>, <ore:itemReed>]);
-// ME Coverred Cable
-recipes.addShapeless(<appliedenergistics2:item.ItemMultiPart:36>,
- [<appliedenergistics2:item.ItemMultiPart:16>, <ore:plateRubber>]);
 // Iron panel fix
 recipes.addShapeless(<terrafirmacraft:item.Wrought Iron Sheet>, [<ore:plateIron>]);
 // Wrought Iron Double Ingot fix
@@ -333,6 +317,17 @@ for i, dirtTFC in dirts {
 	Centrifuge.addRecipe([<IC2:itemFuelPlantBall>, <gregtech:gt.metaitem.01:805>, sandTFC], null, dirtTFC, null, null, [10000, 10000, 10000], 250, 30);
 }
 
+//------Assembler------
+//Shutter Recipe Fix
+var plateIron = <Railcraft:part.plate>;
+var plateWroughtIron = <gregtech:gt.metaitem.01:17304>;
+var plateAluminium = <gregtech:gt.metaitem.01:17019>;
+var shutterModule = <gregtech:gt.metaitem.01:32749>;
+recipes.remove(shutterModule);
+Assembler.addRecipe(shutterModule * 2, plateIron * 2, <minecraft:iron_door> * 1, 801, 16);
+Assembler.addRecipe(shutterModule * 2, plateAluminium * 2, <minecraft:iron_door> * 1, 801, 16);
+Assembler.addRecipe(shutterModule * 2, plateWroughtIron * 2, <minecraft:iron_door> * 1, 801, 16);
+
 // Salt water
 //OutputArray, InputFluid, InputStack, InputCell, OutputFluid, OutputArrayChances, Time in Ticks, EnergyUsage
 Centrifuge.addRecipe([<terrafirmacraft:item.Powder:9>, <terrafirmacraft:item.Powder:9>, <terrafirmacraft:item.Powder:9>, <terrafirmacraft:item.Powder:9>], <liquid:saltwater> * 10000, null, null, <liquid:freshwater> * 2000, [10000, 5000, 2000, 500], 250, 30);
@@ -348,7 +343,11 @@ mods.gregtech.Extruder.addRecipe(<terrafirmacraft:item.Fire Brick>, <terrafirmac
 
 //------Mixer------
 //OutputStack, OutputFluid, InputArray, FluidInput, Time in Ticks, EnergyUsage
-mods.gregtech.Mixer.addRecipe(<minecraft:blaze_powder>, null, [<ore:dustDarkAsh>, <ore:dustSulfur>, <ore:dustMagnesium>], <liquid:lava> * 1000, 100, 16);
+//mods.gregtech.Mixer.addRecipe(<minecraft:blaze_powder>, null, [<ore:dustDarkAsh>, <ore:dustSulfur>, <ore:dustMagnesium>], <liquid:lava> * 1000, 100, 16);
+
+//BlaseRod
+//OutputArray, InputFluid, InputArray, Time in Ticks, EnergyUsage, HeatAmount
+mods.gregtech.BlastFurnace.addRecipe([<minecraft:blaze_rod>], <liquid:oxygen> * 1000, [<ore:stickSteelMagnetic>, <ore:dustSulfur> * 3 ], 1500, 120, 1500);
 
 //Distillery
 //OutputFluid, InputCircuit, InputFluid, Time in Ticks, EnergyUsage, isHidden
@@ -381,3 +380,29 @@ mods.gregtech.FluidExtractor.addRecipe(null, <terrafirmacraft:Flowers2:7>, <liqu
 mods.gregtech.FluidExtractor.addRecipe(null, <terrafirmacraft:Flowers2:6>, <liquid:dye.watermixed.dyewhite> * 20, 10000, 128, 4);
 mods.gregtech.FluidExtractor.addRecipe(null, <terrafirmacraft:Flowers2:3>, <liquid:dye.watermixed.dyewhite> * 24, 10000, 128, 4);
 mods.gregtech.FluidExtractor.addRecipe(null, <terrafirmacraft:Flowers2:8>, <liquid:dye.watermixed.dyewhite> * 30, 10000, 128, 4);
+
+//------Chemical Bath------
+//Paper in Bath
+//OutputArray, InputStack, InputFluid, OutputArrayChances, Time in Ticks, EnergyUsage
+mods.gregtech.ChemicalBath.addRecipe([<minecraft:paper>], <terrafirmacraft:item.Reeds>, <liquid:water> * 100, [10000], 400, 2);
+
+
+//------Bronze fix------
+//Bronze
+recipes.remove (<gregtech:gt.metaitem.01:2300>);
+recipes.remove (<IC2:itemDust>);
+
+//Bronze
+recipes.addShaped(<gregtech:gt.metaitem.01:2300> * 9,
+[[<ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>],
+[<ore:dustCopper>, <ore:dustTin>, <ore:dustCopper>],
+[<ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>]]);
+recipes.addShaped(<gregtech:gt.metaitem.01:2300>, [[<ore:dustSmallBronze>, <ore:dustSmallBronze>], [<ore:dustSmallBronze>, <ore:dustSmallBronze>]]);
+
+mods.gregtech.AlloySmelter.addRecipe(<terrafirmacraft:item.Bronze Ingot> * 9, <terrafirmacraft:item.Copper Ingot> * 8, <terrafirmacraft:item.Tin Ingot>, 500, 16);
+mods.gregtech.AlloySmelter.addRecipe(<terrafirmacraft:item.Bronze Ingot> * 9, <terrafirmacraft:item.Copper Ingot> * 8, <gregtech:gt.metaitem.01:2057>, 475, 16);
+mods.gregtech.AlloySmelter.addRecipe(<terrafirmacraft:item.Bronze Ingot> * 9, <gregtech:gt.metaitem.01:2035> * 8, <terrafirmacraft:item.Tin Ingot>, 475, 16);
+mods.gregtech.AlloySmelter.addRecipe(<terrafirmacraft:item.Bronze Ingot> * 9, <gregtech:gt.metaitem.01:2035> * 8, <gregtech:gt.metaitem.01:2057>, 450, 16);
+
+//OutputArray, InputFluid, InputStack, InputCell, OutputFluid, OutputArrayChances, Time in Ticks, EnergyUsage
+Centrifuge.addRecipe([<gregtech:gt.metaitem.01:2035> * 8, <gregtech:gt.metaitem.01:2057>], null, <gregtech:gt.metaitem.01:2300> * 9, null, null, [10000, 10000], 260, 16);

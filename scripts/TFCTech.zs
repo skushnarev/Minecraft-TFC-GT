@@ -12,6 +12,9 @@ import mods.gregtech.ChemicalReactor;
 // Induction Smelter
 recipes.remove(<tfctech:InductionSmelter>);
 
+// TFC-Tech Aluminium
+recipes.remove(<tfctech:item.Aluminum Ingot>);
+
 
 //======ADD ORE DICTIONARY======
 // Crucible in furnace

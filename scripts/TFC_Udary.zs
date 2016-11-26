@@ -8,7 +8,7 @@
 
 //------Remove crafting------
 // Stick
-//recipes.remove(<terrafirmacraft:item.stick>);
+recipes.remove(<terrafirmacraft:item.stick>);
 // Log Oak
 recipes.removeShaped(<terrafirmacraft:item.Log>);
 

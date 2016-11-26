@@ -12,10 +12,6 @@ orePlankPlaned.add(<tfcadditions:item.Plank Planed:*>);
 
 //======ADD RECIPES======
 
-
-
-
-
 var lumberTFC = [
 	<terrafirmacraft:item.SinglePlank>,
 	<terrafirmacraft:item.SinglePlank:1>,
@@ -62,4 +58,8 @@ for i, lumberTFCone in lumberTFC {
 	recipes.remove(planedTFCAone);
 
 	recipes.addShapeless(planedTFCAone,[lumberTFCone, <ore:itemPlaner>.transformDamage(1)]);
+
+	//Lathe
+    //OutputArray, InputStack, Time in Ticks, EnergyUsage
+    mods.gregtech.Lathe.addRecipe([planedTFCAone], lumberTFCone, 10, 4);
 }

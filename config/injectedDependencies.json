@@ -64,6 +64,14 @@
       },
       {
         "type": "before",
+        "target": "bookshelf"
+      },
+      {
+        "type": "before",
+        "target": "betterboat"
+      },
+      {
+        "type": "before",
         "target": "BetterFoliage"
       },
       {
@@ -173,6 +181,10 @@
       {
         "type": "before",
         "target": "NEIPlugins"
+      },
+      {
+        "type": "before",
+        "target": "nmsot"
       },
       {
         "type": "before",

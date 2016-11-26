@@ -440,8 +440,8 @@
 						  nbt='{m:504, n:1, id:"GT_TileEntity_Ores"}'/>
 				<OreBlock block='gregtech:gt.blockores' weight='0.1'
 						  nbt='{m:505, n:1, id:"GT_TileEntity_Ores"}'/>
-				<OreBlock block='gregtech:gt.blockores' weight='0.1'
-						  nbt='{m:506, n:1, id:"GT_TileEntity_Ores"}'/>
+				<!--<OreBlock block='gregtech:gt.blockores' weight='0.1'-->
+						  <!--nbt='{m:506, n:1, id:"GT_TileEntity_Ores"}'/>-->
 				<OreBlock block='gregtech:gt.blockores' weight='0.1'
 						  nbt='{m:507, n:1, id:"GT_TileEntity_Ores"}'/>
 				<OreBlock block='gregtech:gt.blockores' weight='0.1'
@@ -520,8 +520,8 @@
 						  nbt='{m:3340, n:1, id:"GT_TileEntity_Ores"}'/>
 				<OreBlock block='gregtech:gt.blockores' weight='0.5'
 						  nbt='{m:19340, n:1, id:"GT_TileEntity_Ores"}'/>
-				<Setting name='CloudRadius' avg=':= 0.4 * _default_'/>
-				<Setting name='CloudThickness' avg=':= 0.4 * _default_'/>
+				<Setting name='CloudRadius' avg=':= 0.2 * _default_'/>
+				<Setting name='CloudThickness' avg=':= 0.2 * _default_'/>
 				<ReplacesRegexp block='.*'/>
 			</CloudPreset>
 
@@ -1158,7 +1158,7 @@
 				<Setting name='CloudRadius' avg='20' range='5'/>
 				<Setting name='CloudThickness' avg='2.5' range='0.5'/>
 				<Setting name='OreDensity' avg='1' range='0'/>
-				<Setting name='DistributionFrequency' avg='0.04'/>
+				<Setting name='DistributionFrequency' avg='0.02'/>
 				<Setting name='CloudSizeNoise' avg='0'/>
 				<Biome name='.*'/>
 				<Replaces block='terrafirmacraft:StoneMM:3'/> <!-- Schist -->

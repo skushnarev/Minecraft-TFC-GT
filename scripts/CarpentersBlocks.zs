@@ -1,3 +1,5 @@
+//import mods.gregtech.Assembler;
+
 //======REMOVE RECIPES======
 // Carpenters Bed
 recipes.removeShaped(<CarpentersBlocks:itemCarpentersBed>);
@@ -19,6 +21,8 @@ oreCarpentersHammer.add(<CarpentersBlocks:itemCarpentersHammer:*>);
 
 
 //======ADD RECIPES======
+
+//------Shaped------
 // Carpenters Bed
 recipes.addShaped(<CarpentersBlocks:itemCarpentersBed>, 
 	[[<ore:materialCloth>, <ore:materialCloth>, <ore:materialCloth>],
@@ -32,7 +36,7 @@ recipes.addShaped(<CarpentersBlocks:itemCarpentersHammer>,
 	[[<terrafirmacraft:item.Wrought Iron Hammer Head>],
 	[<ore:PlankPlaned>]]);
 // Carpenters Block
-recipes.addShaped(<CarpentersBlocks:blockCarpentersBlock>, 
+recipes.addShaped(<CarpentersBlocks:blockCarpentersBlock> * 2,
 	[[<ore:PlankPlaned>, <ore:PlankPlaned>, <ore:PlankPlaned>],
 	[<ore:PlankPlaned>, <ore:CarpentersHammer>.transformDamage(1), <ore:PlankPlaned>],
 	[<ore:PlankPlaned>, <ore:PlankPlaned>, <ore:PlankPlaned>]]);
@@ -41,3 +45,8 @@ recipes.addShaped(<CarpentersBlocks:blockCarpentersSafe>,
 	[[<ore:plateDoubleWroughtIron>, <ore:plateDoubleWroughtIron>, <ore:plateDoubleWroughtIron>],
 	[<ore:plateDoubleWroughtIron>, <ore:circuitBasic>, <ore:plateDoubleWroughtIron>],
 	[<ore:plateDoubleWroughtIron>, <ore:plateDoubleWroughtIron>, <ore:plateDoubleWroughtIron>]]);
+
+//------Assembler------
+// Carpenters Block
+//OutputStack, InputStack1, InputStack2, InputFluid, Time in Ticks, EnergyUsage
+mods.gregtech.Assembler.addRecipe(<CarpentersBlocks:blockCarpentersBlock> * 2, <ore:woodLumber> * 8, <gregtech:gt.integrated_circuit:4> * 0, null,  400, 4);
