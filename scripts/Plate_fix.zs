@@ -8,14 +8,6 @@
 
 //======WORK OF KOSTEYSS======
 
-//remove railcraft
-recipes.remove(<Railcraft:machine.alpha>);
-recipes.remove(<Railcraft:machine.alpha:2>);
-recipes.remove(<Railcraft:machine.alpha:13>);
-recipes.remove(<Railcraft:machine.beta:10>);
-recipes.remove(<Railcraft:machine.alpha:8>);
-recipes.remove(<Railcraft:machine.alpha:7>);
-
 //plate greg
 recipes.remove(<gregtech:gt.metaitem.01:17006>);
 recipes.remove(<gregtech:gt.metaitem.01:17008>);

@@ -60,6 +60,19 @@ recipes.remove(<minecraft:bucket>);
 //Rock Crusher
 recipes.remove(<Railcraft:machine.alpha:15>);
 
+//remove railcraft ???
+// Anchors
+recipes.remove(<Railcraft:machine.alpha>);
+recipes.remove(<Railcraft:machine.alpha:2>);
+recipes.remove(<Railcraft:machine.alpha:13>);
+// Anchors Sentinel
+recipes.remove(<Railcraft:machine.beta:10>);
+// Chanck Loader
+recipes.remove(<ChickenChunks:chickenChunkLoader>);
+// Rolling Machine
+recipes.remove(<Railcraft:machine.alpha:8>);
+// Coke Oven Brick
+//recipes.remove(<Railcraft:machine.alpha:7>);
 
 
 //======ADD RECIPES======
@@ -120,6 +133,11 @@ recipes.addShaped(<terrafirmacraft:item.Clay:1> * 3,
  [[<ore:dustKaolinite>, <ore:dustGraphite>, <ore:dustKaolinite>],
   [<ore:dustGraphite>, <ore:lumpClay>, <ore:dustGraphite>],
   [<ore:dustKaolinite>, <ore:dustGraphite>, <ore:dustKaolinite>]]);
+recipes.addShaped(<ChickenChunks:chickenChunkLoader>, [
+    [<ore:plateDoubleGold>, <minecraft:obsidian>, <ore:plateDoubleGold>],
+    [<ore:gemDiamond>, <minecraft:ender_eye>, <ore:gemDiamond>],
+    [<ore:plateDoubleGold>, <minecraft:obsidian>, <ore:plateDoubleGold>]]);
+
 
 //------Shapeless------
 // Glowstone

@@ -80,6 +80,10 @@
       },
       {
         "type": "before",
+        "target": "ChickenChunks"
+      },
+      {
+        "type": "before",
         "target": "creativecore"
       },
       {

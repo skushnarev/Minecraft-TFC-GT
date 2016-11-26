@@ -17,6 +17,8 @@ server-resource-packs/
 texturepacks/
 *.log
 *.rar
+usercache.json
+usernamecache.json
 xrayBlocks.dat
 
 # Folder config file
