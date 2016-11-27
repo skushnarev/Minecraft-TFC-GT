@@ -133,6 +133,7 @@ recipes.addShaped(<terrafirmacraft:item.Clay:1> * 3,
  [[<ore:dustKaolinite>, <ore:dustGraphite>, <ore:dustKaolinite>],
   [<ore:dustGraphite>, <ore:lumpClay>, <ore:dustGraphite>],
   [<ore:dustKaolinite>, <ore:dustGraphite>, <ore:dustKaolinite>]]);
+// Chicken Chunks Loader
 recipes.addShaped(<ChickenChunks:chickenChunkLoader>, [
     [<ore:plateDoubleGold>, <minecraft:obsidian>, <ore:plateDoubleGold>],
     [<ore:gemDiamond>, <minecraft:ender_eye>, <ore:gemDiamond>],
