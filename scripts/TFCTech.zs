@@ -15,6 +15,14 @@ recipes.remove(<tfctech:InductionSmelter>);
 // TFC-Tech Aluminium
 recipes.remove(<tfctech:item.Aluminum Ingot>);
 
+// Bauxite Dust
+mods.Terrafirmacraft.ItemHeat.removeRecipe(<tfctech:item.Bauxite Dust>);
+// Bauxite Ores
+mods.Terrafirmacraft.ItemHeat.removeRecipe(<tfctech:item.Ore>);
+mods.Terrafirmacraft.ItemHeat.removeRecipe(<tfctech:item.Ore:1>);
+mods.Terrafirmacraft.ItemHeat.removeRecipe(<tfctech:item.Ore:2>);
+mods.Terrafirmacraft.ItemHeat.removeRecipe(<tfctech:item.Small Ore>);
+
 
 //======ADD ORE DICTIONARY======
 // Crucible in furnace
@@ -60,7 +68,5 @@ AlloySmelter.addRecipe(<gregtech:gt.metaitem.01:11880> * 1, <gregtech:gt.metaite
 // Rubber Bar
 //OutputStack, OutputFluid, InputStack1, InputStack2, InputFluid, Time in Ticks
 ChemicalReactor.addRecipe(null, <liquid:molten.rubber> * 1296, <gregtech:gt.metaitem.01:2896> * 9, <tfctech:item.Vulcanizing Agents> * 1, null, 620);
-
-
 
 

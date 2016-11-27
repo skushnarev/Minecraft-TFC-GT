@@ -177,6 +177,17 @@ recipes.addShapeless(<gregtech:gt.blockmachines:1246>, [<ore:wireGt01Tin>, <ore:
 recipes.addShapeless(<gregtech:gt.blockmachines:1226>, [<ore:wireGt01Lead>, <ore:materialAnyCloth>, <ore:materialAnyString>, <terrafirmacraft:item.Ink>]);
 
 
+//======REMOVE ORE DICTIONARY======
+//
+val oreBucketEmpty = <ore:bucketEmpty>;
+//oreBucketEmpty.remove(<terrafirmacraft:item.Wooden Bucket Empty>);
+oreBucketEmpty.remove(<minecraft:bucket>);
+oreBucketEmpty.remove(<terrafirmacraft:item.Blue Steel Bucket Empty>);
+oreBucketEmpty.remove(<terrafirmacraft:item.Red Steel Bucket Empty>);
+
+
+
+
 //======ADD ORE DICTIONARY======
 // Crucible in furnace
 val furnaceORE = <ore:craftingFurnace>;

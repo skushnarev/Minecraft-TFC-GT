@@ -224,6 +224,10 @@
       },
       {
         "type": "before",
+        "target": "TFCTweaker"
+      },
+      {
+        "type": "before",
         "target": "Waila"
       },
       {
