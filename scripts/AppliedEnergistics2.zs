@@ -95,3 +95,8 @@ FormingPress.addRecipe(<appliedenergistics2:item.ItemBasicStorageCell.1k>, <appl
 FormingPress.addRecipe(<appliedenergistics2:item.ItemBasicStorageCell.4k>, <appliedenergistics2:item.ItemMultiMaterial:39>, <appliedenergistics2:item.ItemMultiMaterial:36>, 40, 96);
 FormingPress.addRecipe(<appliedenergistics2:item.ItemBasicStorageCell.16k>, <appliedenergistics2:item.ItemMultiMaterial:39>, <appliedenergistics2:item.ItemMultiMaterial:37>, 40, 96);
 FormingPress.addRecipe(<appliedenergistics2:item.ItemBasicStorageCell.64k>, <appliedenergistics2:item.ItemMultiMaterial:39>, <appliedenergistics2:item.ItemMultiMaterial:38>, 40, 96);
+
+//------Macerator------
+// Tiny Pile of Nether Star Dust
+//OutputArray, InputStack, OutputArrayChances, Time in Ticks, EnergyUsage
+mods.gregtech.Pulverizer.addRecipe([<appliedenergistics2:item.ItemMultiMaterial:8>, <gregtech:gt.metaitem.01:506>], <appliedenergistics2:item.ItemMultiMaterial:12>, [8000, 100], 400, 2);
