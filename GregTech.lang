@@ -320,6 +320,7 @@ languagefile {
     S:TileEntity_DESCRIPTION_1171_Index_0=Controller Block for the Large Diesel Engine
     S:TileEntity_DESCRIPTION_1171_Index_1=Size(WxHxD): 3x3x4, Controller (front centered)
     S:TileEntity_DESCRIPTION_1171_Index_10=2048EU/t default output, 6144EU/t boosted output
+    S:TileEntity_DESCRIPTION_1171_Index_11=2048EU/t default output, 6144EU/t boosted output
     S:TileEntity_DESCRIPTION_1171_Index_2=3x3x4 of Stable Titanium Casing (hollow, Min 24!)
     S:TileEntity_DESCRIPTION_1171_Index_3=2x Titanium Gear Box Casing inside the Hollow Casing
     S:TileEntity_DESCRIPTION_1171_Index_4=8x Engine Intake Casings (around controller, Min 8!)
@@ -328,6 +329,12 @@ languagefile {
     S:TileEntity_DESCRIPTION_1171_Index_7=1x Muffler Hatch (top middle back)
     S:TileEntity_DESCRIPTION_1171_Index_8=1x Dynamo Hatch (back centered)
     S:TileEntity_DESCRIPTION_1171_Index_9=Engine Intake Casings not obstructed (only air blocks)
+    S:TileEntity_DESCRIPTION_1172_Index_0=Controller Block for the Cleanroom
+    S:TileEntity_DESCRIPTION_1172_Index_1=Min(WxHxD): 3x3x3 (Hollow), Max(WxHxD): 15x15x15 (Hollow)
+    S:TileEntity_DESCRIPTION_1172_Index_2=Controller (Top center), Walls Plascrete
+    S:TileEntity_DESCRIPTION_1172_Index_3=Max 1 Door
+    S:TileEntity_DESCRIPTION_1172_Index_4=1x Energyhatch LV
+    S:TileEntity_DESCRIPTION_1172_Index_5=1-4x Machine Hull to transfer Items&Energy inside
     S:TileEntity_DESCRIPTION_118_Index_0=Combination Smelter
     S:TileEntity_DESCRIPTION_1190_Index_0=Fuel Efficiency: 80%
     S:TileEntity_DESCRIPTION_1190_Index_1=Fuel Efficiency: 80%
@@ -4229,6 +4236,7 @@ languagefile {
     S:gt.blockmachines.multimachine.boiler.titanium.name=Large Titanium Boiler
     S:gt.blockmachines.multimachine.boiler.tungstensteel.name=Large Tungstensteel Boiler
     S:gt.blockmachines.multimachine.charcoalpile.name=Charcoal Pile Igniter
+    S:gt.blockmachines.multimachine.cleanroom.name=Cleanroom Controller
     S:gt.blockmachines.multimachine.cracker.name=Oil Cracking Unit
     S:gt.blockmachines.multimachine.dieselengine.name=Diesel Engine
     S:gt.blockmachines.multimachine.distillationtower.name=Distillation Tower
@@ -19725,6 +19733,8 @@ languagefile {
     S:gt.metaitem.01.30324.tooltip=Nq
     S:gt.metaitem.01.30326.name=Enriched Naquadah Cell
     S:gt.metaitem.01.30326.tooltip=Nq+
+    S:gt.metaitem.01.30327.name=Naquadria Cell
+    S:gt.metaitem.01.30327.tooltip=NqX
     S:gt.metaitem.01.3033.name=Impure Pile of Cobalt Dust
     S:gt.metaitem.01.3033.tooltip=Co
     S:gt.metaitem.01.3034.name=Impure Pile of Nickel Dust

@@ -14,9 +14,12 @@ resourcepacks/
 saves/
 screenshots/
 server-resource-packs/
+shaderpacks/
 texturepacks/
 *.log
 *.rar
+*.disabled
+optionsshaders.txt
 usercache.json
 usernamecache.json
 xrayBlocks.dat

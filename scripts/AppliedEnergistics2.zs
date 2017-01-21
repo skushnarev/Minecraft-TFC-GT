@@ -7,8 +7,47 @@ import mods.gregtech.FormingPress;
 
 
 //------Remove crafting------
-// ME Controller
+// ME Stuff
 recipes.remove(<appliedenergistics2:tile.BlockController>);
+recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:35>);
+recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:39>);
+recipes.remove(<appliedenergistics2:tile.BlockDrive>);
+recipes.remove(<appliedenergistics2:tile.BlockInterface>);
+recipes.remove(<appliedenergistics2:item.ItemMultiPart:180>);
+recipes.remove(<appliedenergistics2:tile.BlockChest>);
+recipes.remove(<appliedenergistics2:tile.BlockController>);
+recipes.remove(<appliedenergistics2:item.ItemMultiPart:76>);
+recipes.remove(<appliedenergistics2:item.ItemMultiPart:36>);
+recipes.remove(<appliedenergistics2:tile.BlockCraftingUnit>);
+recipes.remove(<appliedenergistics2:tile.BlockMolecularAssembler>);
+recipes.remove(<appliedenergistics2:tile.BlockDenseEnergyCell>);
+recipes.remove(<appliedenergistics2:tile.BlockEnergyCell>);
+recipes.remove(<appliedenergistics2:tile.BlockQuartzGrowthAccelerator>);
+recipes.remove(<appliedenergistics2:item.ItemBasicStorageCell.64k>);
+recipes.remove(<appliedenergistics2:item.ItemBasicStorageCell.16k>);
+recipes.remove(<appliedenergistics2:item.ItemBasicStorageCell.4k>);
+recipes.remove(<appliedenergistics2:item.ItemBasicStorageCell.1k>);
+recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:37>);
+recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:38>);
+recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:36>);
+recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:35>);
+recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:39>);
+recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:43>);
+recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:44>);
+recipes.remove(<appliedenergistics2:item.ItemMultiPart:16>);
+recipes.remove(<appliedenergistics2:item.ItemMultiPart:140>);
+recipes.remove(<appliedenergistics2:tile.BlockDrive>);
+recipes.remove(<appliedenergistics2:tile.BlockInterface>);
+recipes.remove(<appliedenergistics2:tile.BlockVibrationChamber>);
+recipes.remove(<appliedenergistics2:tile.BlockCharger>);
+recipes.remove(<appliedenergistics2:tile.BlockInscriber>);
+recipes.remove(<appliedenergistics2:tile.BlockCondenser>);
+recipes.remove(<appliedenergistics2:tile.BlockQuantumLinkChamber>);
+recipes.remove(<appliedenergistics2:tile.BlockQuantumRing>);
+recipes.remove(<appliedenergistics2:item.ItemMultiPart:56>);
+recipes.remove(<appliedenergistics2:tile.BlockEnergyAcceptor>);
+recipes.remove(<appliedenergistics2:tile.BlockIOPort>);
+
 // Applet quartz tools
 recipes.remove(<appliedenergistics2:item.ToolCertusQuartzAxe>);
 recipes.remove(<appliedenergistics2:item.ToolCertusQuartzHoe>);
@@ -96,7 +135,7 @@ FormingPress.addRecipe(<appliedenergistics2:item.ItemBasicStorageCell.4k>, <appl
 FormingPress.addRecipe(<appliedenergistics2:item.ItemBasicStorageCell.16k>, <appliedenergistics2:item.ItemMultiMaterial:39>, <appliedenergistics2:item.ItemMultiMaterial:37>, 40, 96);
 FormingPress.addRecipe(<appliedenergistics2:item.ItemBasicStorageCell.64k>, <appliedenergistics2:item.ItemMultiMaterial:39>, <appliedenergistics2:item.ItemMultiMaterial:38>, 40, 96);
 
-//------Macerator------
+//------Pulverizer------
 // Tiny Pile of Nether Star Dust
 //OutputArray, InputStack, OutputArrayChances, Time in Ticks, EnergyUsage
 mods.gregtech.Pulverizer.addRecipe([<appliedenergistics2:item.ItemMultiMaterial:8>, <gregtech:gt.metaitem.01:506>], <appliedenergistics2:item.ItemMultiMaterial:12>, [8000, 100], 400, 2);

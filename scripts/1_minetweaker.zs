@@ -166,6 +166,8 @@ recipes.addShapeless(<terrafirmacraft:item.Wrought Iron Double Ingot>, [<gregtec
 // String <-> WoolYarn
 recipes.addShapeless(<terrafirmacraft:item.WoolYarn>, [<minecraft:string>]);
 recipes.addShapeless(<minecraft:string>, [<terrafirmacraft:item.WoolYarn>]);
+// Orange dye
+recipes.addShapeless(<minecraft:dye:14>, [<ore:dyeOrange>]);
 // Bronze Dust
 recipes.addShapeless(<gregtech:gt.metaitem.01:2300> * 9, 
 [<ore:dustCopper>, <ore:dustCopper>, <ore:dustCopper>, 
@@ -347,6 +349,14 @@ for i, dirtTFC in dirts {
 	Centrifuge.addRecipe([<IC2:itemFuelPlantBall>, <gregtech:gt.metaitem.01:805>, sandTFC], null, dirtTFC, null, null, [10000, 10000, 10000], 250, 30);
 }
 
+// Salt water
+//OutputArray, InputFluid, InputStack, InputCell, OutputFluid, OutputArrayChances, Time in Ticks, EnergyUsage
+Centrifuge.addRecipe([<terrafirmacraft:item.Powder:9>, <terrafirmacraft:item.Powder:9>, <terrafirmacraft:item.Powder:9>, <terrafirmacraft:item.Powder:9>], <liquid:saltwater> * 10000, null, null, <liquid:freshwater> * 2000, [10000, 5000, 2000, 500], 250, 30);
+
+// Rare Earth
+//OutputArray, InputFluid, InputStack, InputCell, OutputFluid, OutputArrayChances, Time in Ticks, EnergyUsage
+Centrifuge.addRecipe([<gregtech:gt.metaitem.01:891>, <gregtech:gt.metaitem.01:922>], null, <ore:dustStone>, null, null, [1000, 50], 60, 256);
+
 //------Assembler------
 //Shutter Recipe Fix
 var plateIron = <Railcraft:part.plate>;
@@ -357,14 +367,6 @@ recipes.remove(shutterModule);
 Assembler.addRecipe(shutterModule * 2, plateIron * 2, <minecraft:iron_door> * 1, 801, 16);
 Assembler.addRecipe(shutterModule * 2, plateAluminium * 2, <minecraft:iron_door> * 1, 801, 16);
 Assembler.addRecipe(shutterModule * 2, plateWroughtIron * 2, <minecraft:iron_door> * 1, 801, 16);
-
-// Salt water
-//OutputArray, InputFluid, InputStack, InputCell, OutputFluid, OutputArrayChances, Time in Ticks, EnergyUsage
-Centrifuge.addRecipe([<terrafirmacraft:item.Powder:9>, <terrafirmacraft:item.Powder:9>, <terrafirmacraft:item.Powder:9>, <terrafirmacraft:item.Powder:9>], <liquid:saltwater> * 10000, null, null, <liquid:freshwater> * 2000, [10000, 5000, 2000, 500], 250, 30);
-
-// Rare Earth
-//OutputArray, InputFluid, InputStack, InputCell, OutputFluid, OutputArrayChances, Time in Ticks, EnergyUsage
-Centrifuge.addRecipe([<gregtech:gt.metaitem.01:891>, <gregtech:gt.metaitem.01:922>], null, <ore:dustStone>, null, null, [1000, 50], 60, 256);
 
 //------Extruder------
 // Clay Fire Brick
